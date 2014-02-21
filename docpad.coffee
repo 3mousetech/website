@@ -115,5 +115,3 @@ module.exports =
     dateurls:
       cleanurl: true
       collectionName: "articles"
-      trailingSlashes: true
-
