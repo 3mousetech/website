@@ -109,9 +109,3 @@ module.exports =
           res.redirect 301, newUrl+req.url
         else
           next()
-
-  plugins:
-
-    dateurls:
-      cleanurl: true
-      collectionName: "articles"
