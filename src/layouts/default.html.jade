@@ -25,6 +25,7 @@ html(lang = "en", ng-app = "app")
               - clazz = (document.url === doc.url) ? "active" : null
               li(class = clazz)
                 a(href=doc.url)= doc.title
+        #content
           if document.type == "page" && !document.isPaged
             header
               h1=document.title
