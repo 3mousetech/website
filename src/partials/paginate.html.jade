@@ -1,0 +1,27 @@
+if hasPrevPage() || hasNextPage()
+  ul.pagination
+    - var prevClass = ""
+    if !hasPrevPage()
+      - prevClass = "disabled"
+    -var href = "/"
+    -var dest = document.page.number-1
+    if dest > 0
+      href = "index."+dest
+    li(class = prevClass): a(href = href) &laquo;
+    each page, number in document.page.pages
+      - var clas = ""
+      if number == document.page.number
+        - clas = "active"
+      -var href = "/"
+      if number > 0
+        - href = "index."+number
+      li(class = clas)
+        a(href = href)
+          =number+1
+          if number == document.page.number
+            span.sr-only
+              | (current)
+    - var nextClass = ""
+    if !hasNextPage()
+      nextClass = "disabled"
+    li(class = nextClass): a(href = "index."+(document.page.number+1)) &raquo;

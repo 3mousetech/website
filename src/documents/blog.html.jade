@@ -1,0 +1,12 @@
+---
+title: Blog
+type: page
+order: 1
+isPaged: true
+pagedCollection: "articles"
+pageSize: 5
+---
+
+each a in getPageCollection("articles").toJSON()
+  !=partial("article", {article: a})
+!=partial("paginate")

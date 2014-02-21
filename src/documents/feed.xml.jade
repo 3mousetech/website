@@ -1,0 +1,17 @@
+!!!xml
+feed(xmlns = "http://www.w3.org/2005/Atom")
+  title=site.title
+  link(href = site.url+"/feed.xml", rel = "self")
+  link(href = site.url)
+  updated=site.date.toISOString()
+  id=site.url
+  author
+    name=site.author
+    email=site.email
+  each document in getCollection("articles").toJSON()
+    entry
+      title=document.title
+      link(href = site.url+document.url)
+      updated=document.date.toISOString()
+      id=site.url+document.url
+      content(type = "html")!=document.contentRenderedWithoutLayouts

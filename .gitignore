@@ -1,0 +1,4 @@
+out
+node_modules
+.docpad.db
+src/files/scripts/vendor
