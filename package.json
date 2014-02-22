@@ -1,10 +1,10 @@
 {
-  "name": "thewordnerd.info",
+  "name": "3mt",
   "version": "0.0.0",
-  "homepage": "http://thewordnerd.info",
+  "homepage": "http://3mousetech.com",
   "repository": {
     "type": "git",
-    "url": "https://thewordnerd.info/scm/users/nolan/thewordnerd.info"
+    "url": "https://thewordnerd.info/scm/3mt/website"
   },
   "engines": {
     "node": "0.8.x",
