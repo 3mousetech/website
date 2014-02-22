@@ -1,0 +1,276 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/bin/npm', 'install' ]
+info using npm@1.1.4
+info using node@v0.6.12
+verbose config file /home/matt/.npmrc
+verbose config file /usr/etc/npmrc
+verbose config file /usr/share/npm/npmrc
+verbose caching /home/matt/3mt/website/package.json
+verbose loadDefaults thewordnerd.info@0.0.0
+verbose readDependencies: using package.json deps
+verbose where, deps [ '/home/matt/3mt/website',
+verbose where, deps   [ 'docpad',
+verbose where, deps     'docpad-plugin-cleanurls',
+verbose where, deps     'docpad-plugin-marked',
+verbose where, deps     'docpad-plugin-partials',
+verbose where, deps     'docpad-plugin-jade',
+verbose where, deps     'docpad-plugin-dateurls',
+verbose where, deps     'docpad-plugin-sitemap',
+verbose where, deps     'docpad-plugin-paged',
+verbose where, deps     'docpad-plugin-livescript',
+verbose where, deps     'docpad-plugin-emailobfuscator',
+verbose where, deps     'docpad-plugin-eco',
+verbose where, deps     'bower',
+verbose where, deps     'docpad-plugin-livereload' ] ]
+verbose from cache /home/matt/3mt/website/package.json
+info preinstall thewordnerd.info@0.0.0
+verbose from cache /home/matt/3mt/website/package.json
+verbose readDependencies: using package.json deps
+verbose cache add [ 'docpad@~6.x', null ]
+silly cache add: name, spec, args [ undefined, 'docpad@~6.x', [ 'docpad@~6.x', null ] ]
+verbose parsed url { pathname: 'docpad@~6.x',
+verbose parsed url   path: 'docpad@~6.x',
+verbose parsed url   href: 'docpad@~6.x' }
+silly cache add: name, spec, args [ 'docpad', '~6.x', [ 'docpad', '~6.x' ] ]
+verbose parsed url { pathname: '~6.x', path: '~6.x', href: '~6.x' }
+verbose addNamed [ 'docpad', '~6.x' ]
+verbose addNamed [ null, '>=6.0.0- <7.0.0-' ]
+silly name, range, hasData [ 'docpad', '>=6.0.0- <7.0.0-', false ]
+verbose raw, before any munging docpad
+verbose url resolving [ 'https://registry.npmjs.org/', './docpad' ]
+verbose url resolved https://registry.npmjs.org/docpad
+http GET https://registry.npmjs.org/docpad
+verbose cache add [ 'docpad-plugin-cleanurls@~2.x', null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'docpad-plugin-cleanurls@~2.x',
+silly cache add: name, spec, args   [ 'docpad-plugin-cleanurls@~2.x', null ] ]
+verbose parsed url { pathname: 'docpad-plugin-cleanurls@~2.x',
+verbose parsed url   path: 'docpad-plugin-cleanurls@~2.x',
+verbose parsed url   href: 'docpad-plugin-cleanurls@~2.x' }
+silly cache add: name, spec, args [ 'docpad-plugin-cleanurls',
+silly cache add: name, spec, args   '~2.x',
+silly cache add: name, spec, args   [ 'docpad-plugin-cleanurls', '~2.x' ] ]
+verbose parsed url { pathname: '~2.x', path: '~2.x', href: '~2.x' }
+verbose addNamed [ 'docpad-plugin-cleanurls', '~2.x' ]
+verbose addNamed [ null, '>=2.0.0- <3.0.0-' ]
+silly name, range, hasData [ 'docpad-plugin-cleanurls', '>=2.0.0- <3.0.0-', false ]
+verbose cache add [ 'docpad-plugin-marked@~2.x', null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'docpad-plugin-marked@~2.x',
+silly cache add: name, spec, args   [ 'docpad-plugin-marked@~2.x', null ] ]
+verbose parsed url { pathname: 'docpad-plugin-marked@~2.x',
+verbose parsed url   path: 'docpad-plugin-marked@~2.x',
+verbose parsed url   href: 'docpad-plugin-marked@~2.x' }
+silly cache add: name, spec, args [ 'docpad-plugin-marked',
+silly cache add: name, spec, args   '~2.x',
+silly cache add: name, spec, args   [ 'docpad-plugin-marked', '~2.x' ] ]
+verbose parsed url { pathname: '~2.x', path: '~2.x', href: '~2.x' }
+verbose addNamed [ 'docpad-plugin-marked', '~2.x' ]
+verbose addNamed [ null, '>=2.0.0- <3.0.0-' ]
+silly name, range, hasData [ 'docpad-plugin-marked', '>=2.0.0- <3.0.0-', false ]
+verbose cache add [ 'docpad-plugin-partials@~2.x', null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'docpad-plugin-partials@~2.x',
+silly cache add: name, spec, args   [ 'docpad-plugin-partials@~2.x', null ] ]
+verbose parsed url { pathname: 'docpad-plugin-partials@~2.x',
+verbose parsed url   path: 'docpad-plugin-partials@~2.x',
+verbose parsed url   href: 'docpad-plugin-partials@~2.x' }
+silly cache add: name, spec, args [ 'docpad-plugin-partials',
+silly cache add: name, spec, args   '~2.x',
+silly cache add: name, spec, args   [ 'docpad-plugin-partials', '~2.x' ] ]
+verbose parsed url { pathname: '~2.x', path: '~2.x', href: '~2.x' }
+verbose addNamed [ 'docpad-plugin-partials', '~2.x' ]
+verbose addNamed [ null, '>=2.0.0- <3.0.0-' ]
+silly name, range, hasData [ 'docpad-plugin-partials', '>=2.0.0- <3.0.0-', false ]
+verbose cache add [ 'docpad-plugin-jade@~2.x', null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'docpad-plugin-jade@~2.x',
+silly cache add: name, spec, args   [ 'docpad-plugin-jade@~2.x', null ] ]
+verbose parsed url { pathname: 'docpad-plugin-jade@~2.x',
+verbose parsed url   path: 'docpad-plugin-jade@~2.x',
+verbose parsed url   href: 'docpad-plugin-jade@~2.x' }
+silly cache add: name, spec, args [ 'docpad-plugin-jade',
+silly cache add: name, spec, args   '~2.x',
+silly cache add: name, spec, args   [ 'docpad-plugin-jade', '~2.x' ] ]
+verbose parsed url { pathname: '~2.x', path: '~2.x', href: '~2.x' }
+verbose addNamed [ 'docpad-plugin-jade', '~2.x' ]
+verbose addNamed [ null, '>=2.0.0- <3.0.0-' ]
+silly name, range, hasData [ 'docpad-plugin-jade', '>=2.0.0- <3.0.0-', false ]
+verbose cache add [ 'docpad-plugin-dateurls@~2.x', null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'docpad-plugin-dateurls@~2.x',
+silly cache add: name, spec, args   [ 'docpad-plugin-dateurls@~2.x', null ] ]
+verbose parsed url { pathname: 'docpad-plugin-dateurls@~2.x',
+verbose parsed url   path: 'docpad-plugin-dateurls@~2.x',
+verbose parsed url   href: 'docpad-plugin-dateurls@~2.x' }
+silly cache add: name, spec, args [ 'docpad-plugin-dateurls',
+silly cache add: name, spec, args   '~2.x',
+silly cache add: name, spec, args   [ 'docpad-plugin-dateurls', '~2.x' ] ]
+verbose parsed url { pathname: '~2.x', path: '~2.x', href: '~2.x' }
+verbose addNamed [ 'docpad-plugin-dateurls', '~2.x' ]
+verbose addNamed [ null, '>=2.0.0- <3.0.0-' ]
+silly name, range, hasData [ 'docpad-plugin-dateurls', '>=2.0.0- <3.0.0-', false ]
+verbose cache add [ 'docpad-plugin-sitemap@~2.x', null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'docpad-plugin-sitemap@~2.x',
+silly cache add: name, spec, args   [ 'docpad-plugin-sitemap@~2.x', null ] ]
+verbose parsed url { pathname: 'docpad-plugin-sitemap@~2.x',
+verbose parsed url   path: 'docpad-plugin-sitemap@~2.x',
+verbose parsed url   href: 'docpad-plugin-sitemap@~2.x' }
+silly cache add: name, spec, args [ 'docpad-plugin-sitemap',
+silly cache add: name, spec, args   '~2.x',
+silly cache add: name, spec, args   [ 'docpad-plugin-sitemap', '~2.x' ] ]
+verbose parsed url { pathname: '~2.x', path: '~2.x', href: '~2.x' }
+verbose addNamed [ 'docpad-plugin-sitemap', '~2.x' ]
+verbose addNamed [ null, '>=2.0.0- <3.0.0-' ]
+silly name, range, hasData [ 'docpad-plugin-sitemap', '>=2.0.0- <3.0.0-', false ]
+verbose raw, before any munging docpad-plugin-cleanurls
+verbose url resolving [ 'https://registry.npmjs.org/', './docpad-plugin-cleanurls' ]
+verbose url resolved https://registry.npmjs.org/docpad-plugin-cleanurls
+http GET https://registry.npmjs.org/docpad-plugin-cleanurls
+verbose raw, before any munging docpad-plugin-marked
+verbose url resolving [ 'https://registry.npmjs.org/', './docpad-plugin-marked' ]
+verbose url resolved https://registry.npmjs.org/docpad-plugin-marked
+http GET https://registry.npmjs.org/docpad-plugin-marked
+verbose raw, before any munging docpad-plugin-partials
+verbose url resolving [ 'https://registry.npmjs.org/', './docpad-plugin-partials' ]
+verbose url resolved https://registry.npmjs.org/docpad-plugin-partials
+http GET https://registry.npmjs.org/docpad-plugin-partials
+verbose raw, before any munging docpad-plugin-jade
+verbose url resolving [ 'https://registry.npmjs.org/', './docpad-plugin-jade' ]
+verbose url resolved https://registry.npmjs.org/docpad-plugin-jade
+http GET https://registry.npmjs.org/docpad-plugin-jade
+verbose raw, before any munging docpad-plugin-dateurls
+verbose url resolving [ 'https://registry.npmjs.org/', './docpad-plugin-dateurls' ]
+verbose url resolved https://registry.npmjs.org/docpad-plugin-dateurls
+http GET https://registry.npmjs.org/docpad-plugin-dateurls
+verbose raw, before any munging docpad-plugin-sitemap
+verbose url resolving [ 'https://registry.npmjs.org/', './docpad-plugin-sitemap' ]
+verbose url resolved https://registry.npmjs.org/docpad-plugin-sitemap
+http GET https://registry.npmjs.org/docpad-plugin-sitemap
+verbose cache add [ 'docpad-plugin-paged@~2.x', null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'docpad-plugin-paged@~2.x',
+silly cache add: name, spec, args   [ 'docpad-plugin-paged@~2.x', null ] ]
+verbose parsed url { pathname: 'docpad-plugin-paged@~2.x',
+verbose parsed url   path: 'docpad-plugin-paged@~2.x',
+verbose parsed url   href: 'docpad-plugin-paged@~2.x' }
+silly cache add: name, spec, args [ 'docpad-plugin-paged',
+silly cache add: name, spec, args   '~2.x',
+silly cache add: name, spec, args   [ 'docpad-plugin-paged', '~2.x' ] ]
+verbose parsed url { pathname: '~2.x', path: '~2.x', href: '~2.x' }
+verbose addNamed [ 'docpad-plugin-paged', '~2.x' ]
+verbose addNamed [ null, '>=2.0.0- <3.0.0-' ]
+silly name, range, hasData [ 'docpad-plugin-paged', '>=2.0.0- <3.0.0-', false ]
+verbose cache add [ 'docpad-plugin-livescript@~2.x', null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'docpad-plugin-livescript@~2.x',
+silly cache add: name, spec, args   [ 'docpad-plugin-livescript@~2.x', null ] ]
+verbose parsed url { pathname: 'docpad-plugin-livescript@~2.x',
+verbose parsed url   path: 'docpad-plugin-livescript@~2.x',
+verbose parsed url   href: 'docpad-plugin-livescript@~2.x' }
+silly cache add: name, spec, args [ 'docpad-plugin-livescript',
+silly cache add: name, spec, args   '~2.x',
+silly cache add: name, spec, args   [ 'docpad-plugin-livescript', '~2.x' ] ]
+verbose parsed url { pathname: '~2.x', path: '~2.x', href: '~2.x' }
+verbose addNamed [ 'docpad-plugin-livescript', '~2.x' ]
+verbose addNamed [ null, '>=2.0.0- <3.0.0-' ]
+silly name, range, hasData [ 'docpad-plugin-livescript', '>=2.0.0- <3.0.0-', false ]
+verbose cache add [ 'docpad-plugin-emailobfuscator@~2.x', null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'docpad-plugin-emailobfuscator@~2.x',
+silly cache add: name, spec, args   [ 'docpad-plugin-emailobfuscator@~2.x', null ] ]
+verbose parsed url { pathname: 'docpad-plugin-emailobfuscator@~2.x',
+verbose parsed url   path: 'docpad-plugin-emailobfuscator@~2.x',
+verbose parsed url   href: 'docpad-plugin-emailobfuscator@~2.x' }
+silly cache add: name, spec, args [ 'docpad-plugin-emailobfuscator',
+silly cache add: name, spec, args   '~2.x',
+silly cache add: name, spec, args   [ 'docpad-plugin-emailobfuscator', '~2.x' ] ]
+verbose parsed url { pathname: '~2.x', path: '~2.x', href: '~2.x' }
+verbose addNamed [ 'docpad-plugin-emailobfuscator', '~2.x' ]
+verbose addNamed [ null, '>=2.0.0- <3.0.0-' ]
+silly name, range, hasData [ 'docpad-plugin-emailobfuscator', '>=2.0.0- <3.0.0-', false ]
+verbose cache add [ 'docpad-plugin-eco@~2.x', null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'docpad-plugin-eco@~2.x',
+silly cache add: name, spec, args   [ 'docpad-plugin-eco@~2.x', null ] ]
+verbose parsed url { pathname: 'docpad-plugin-eco@~2.x',
+verbose parsed url   path: 'docpad-plugin-eco@~2.x',
+verbose parsed url   href: 'docpad-plugin-eco@~2.x' }
+silly cache add: name, spec, args [ 'docpad-plugin-eco', '~2.x', [ 'docpad-plugin-eco', '~2.x' ] ]
+verbose parsed url { pathname: '~2.x', path: '~2.x', href: '~2.x' }
+verbose addNamed [ 'docpad-plugin-eco', '~2.x' ]
+verbose addNamed [ null, '>=2.0.0- <3.0.0-' ]
+silly name, range, hasData [ 'docpad-plugin-eco', '>=2.0.0- <3.0.0-', false ]
+verbose cache add [ 'bower@~1.2.8', null ]
+silly cache add: name, spec, args [ undefined, 'bower@~1.2.8', [ 'bower@~1.2.8', null ] ]
+verbose parsed url { pathname: 'bower@~1.2.8',
+verbose parsed url   path: 'bower@~1.2.8',
+verbose parsed url   href: 'bower@~1.2.8' }
+silly cache add: name, spec, args [ 'bower', '~1.2.8', [ 'bower', '~1.2.8' ] ]
+verbose parsed url { pathname: '~1.2.8', path: '~1.2.8', href: '~1.2.8' }
+verbose addNamed [ 'bower', '~1.2.8' ]
+verbose addNamed [ null, '>=1.2.8- <1.3.0-' ]
+silly name, range, hasData [ 'bower', '>=1.2.8- <1.3.0-', false ]
+verbose cache add [ 'docpad-plugin-livereload@~2.x', null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'docpad-plugin-livereload@~2.x',
+silly cache add: name, spec, args   [ 'docpad-plugin-livereload@~2.x', null ] ]
+verbose parsed url { pathname: 'docpad-plugin-livereload@~2.x',
+verbose parsed url   path: 'docpad-plugin-livereload@~2.x',
+verbose parsed url   href: 'docpad-plugin-livereload@~2.x' }
+silly cache add: name, spec, args [ 'docpad-plugin-livereload',
+silly cache add: name, spec, args   '~2.x',
+silly cache add: name, spec, args   [ 'docpad-plugin-livereload', '~2.x' ] ]
+verbose parsed url { pathname: '~2.x', path: '~2.x', href: '~2.x' }
+verbose addNamed [ 'docpad-plugin-livereload', '~2.x' ]
+verbose addNamed [ null, '>=2.0.0- <3.0.0-' ]
+silly name, range, hasData [ 'docpad-plugin-livereload', '>=2.0.0- <3.0.0-', false ]
+verbose raw, before any munging docpad-plugin-paged
+verbose url resolving [ 'https://registry.npmjs.org/', './docpad-plugin-paged' ]
+verbose url resolved https://registry.npmjs.org/docpad-plugin-paged
+http GET https://registry.npmjs.org/docpad-plugin-paged
+verbose raw, before any munging docpad-plugin-livescript
+verbose url resolving [ 'https://registry.npmjs.org/', './docpad-plugin-livescript' ]
+verbose url resolved https://registry.npmjs.org/docpad-plugin-livescript
+http GET https://registry.npmjs.org/docpad-plugin-livescript
+verbose raw, before any munging docpad-plugin-emailobfuscator
+verbose url resolving [ 'https://registry.npmjs.org/',
+verbose url resolving   './docpad-plugin-emailobfuscator' ]
+verbose url resolved https://registry.npmjs.org/docpad-plugin-emailobfuscator
+http GET https://registry.npmjs.org/docpad-plugin-emailobfuscator
+verbose raw, before any munging docpad-plugin-eco
+verbose url resolving [ 'https://registry.npmjs.org/', './docpad-plugin-eco' ]
+verbose url resolved https://registry.npmjs.org/docpad-plugin-eco
+http GET https://registry.npmjs.org/docpad-plugin-eco
+verbose raw, before any munging bower
+verbose url resolving [ 'https://registry.npmjs.org/', './bower' ]
+verbose url resolved https://registry.npmjs.org/bower
+http GET https://registry.npmjs.org/bower
+verbose raw, before any munging docpad-plugin-livereload
+verbose url resolving [ 'https://registry.npmjs.org/', './docpad-plugin-livereload' ]
+verbose url resolved https://registry.npmjs.org/docpad-plugin-livereload
+http GET https://registry.npmjs.org/docpad-plugin-livereload
+ERR! Error: failed to fetch from registry: docpad-plugin-jade
+ERR!     at /usr/share/npm/lib/utils/npm-registry-client/get.js:139:12
+ERR!     at cb (/usr/share/npm/lib/utils/npm-registry-client/request.js:31:9)
+ERR!     at Request._callback (/usr/share/npm/lib/utils/npm-registry-client/request.js:136:18)
+ERR!     at Request.callback (/usr/lib/nodejs/request/main.js:119:22)
+ERR!     at Request.<anonymous> (/usr/lib/nodejs/request/main.js:212:58)
+ERR!     at Request.emit (events.js:88:20)
+ERR!     at ClientRequest.<anonymous> (/usr/lib/nodejs/request/main.js:412:12)
+ERR!     at ClientRequest.emit (events.js:67:17)
+ERR!     at HTTPParser.onIncoming (http.js:1261:11)
+ERR!     at HTTPParser.onHeadersComplete (http.js:102:31)
+ERR! You may report this log at:
+ERR!     <http://bugs.debian.org/npm>
+ERR! or use
+ERR!     reportbug --attach /home/matt/3mt/website/src/documents/npm-debug.log npm
+ERR! 
+ERR! System Linux 3.8.0-35-generic
+ERR! command "node" "/usr/bin/npm" "install"
+ERR! cwd /home/matt/3mt/website/src/documents
+ERR! node -v v0.6.12
+ERR! npm -v 1.1.4
+ERR! message failed to fetch from registry: docpad-plugin-jade
+verbose exit [ 1, true ]
