@@ -41,7 +41,7 @@ We've delivered products on the following platforms:
 
 ##Contact us
 
-If you're looking for accessibility experts, please contact: [sales@3MouseTech.com](mailto:sales@3MouseTech.com).
+If you're looking for accessibility experts, please contact [sales@3MouseTech.com](mailto:sales@3MouseTech.com).
 
 
 <!-- Begin MailChimp Signup Form -->
