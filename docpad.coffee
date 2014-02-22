@@ -75,11 +75,13 @@ module.exports =
     pages: (database) ->
       database.findAllLive({type: "page", order: {$exists: true}, isPagedAuto: {$ne: true}}, [order:1,title:1]).on("add", (doc) ->
         doc.setMetaDefaults(layout: "default")
+        doc.setMetaDefaults(skipTitleHeading: false)
       )
 
     articles: (database) ->
       database.findAllLive({type:'article'},[date:-1]).on("add", (doc) ->
         doc.setMetaDefaults(layout: "article")
+        doc.setMetaDefaults(skipTitleHeading: false)
       )
 
   # DocPad Events
