@@ -7,13 +7,10 @@ article
         a(href = article.url)=article.title
   !=article.contentRenderedWithoutLayouts
   footer
-    | Posted: 
+    | Posted 
     time(datetime = article.date, am-time-ago = article.date.valueOf())
       i=article.date.toLocaleDateString()
     &nbsp;
     if article.tags
       | Tags: 
       !=article.tags.map(function(tag) { return "<a href='/tags/"+tag+"'>"+tag+"</a>" }).join(", ")
-      &nbsp;
-    .pull-right
-      a(href = article.url+"#disqus_thread") Permalink
