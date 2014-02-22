@@ -43,7 +43,6 @@ We've delivered products on the following platforms:
 
 If you're looking for accessibility experts, please contact: [sales@3MouseTech.com](mailto:sales@3MouseTech.com).
 
-
 <!-- Begin MailChimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
 <style type="text/css">
@@ -52,7 +51,7 @@ If you're looking for accessibility experts, please contact: [sales@3MouseTech.c
 	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 </style>
 <div id="mc_embed_signup">
-<form action="http://3mousetech.us3.list-manage.com/subscribe/post?u=e4c99d5227b7f742ef5443f24&amp;id=ed768d4530" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+<form action="http://3mousetech.us3.list-manage1.com/subscribe/post?u=e4c99d5227b7f742ef5443f24&amp;id=ed768d4530" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 	<h2>Subscribe to our mailing list</h2>
 <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
 <div class="mc-field-group">
@@ -68,17 +67,11 @@ If you're looking for accessibility experts, please contact: [sales@3MouseTech.c
 	<label for="mce-LNAME">Last Name </label>
 	<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
 </div>
-<div class="mc-field-group input-group">
-    <strong>Email Format </strong>
-    <ul><li><input type="radio" value="html" name="EMAILTYPE" id="mce-EMAILTYPE-0"><label for="mce-EMAILTYPE-0">html</label></li>
-<li><input type="radio" value="text" name="EMAILTYPE" id="mce-EMAILTYPE-1"><label for="mce-EMAILTYPE-1">text</label></li>
-</ul>
-</div>
 	<div id="mce-responses" class="clear">
 		<div class="response" id="mce-error-response" style="display:none"></div>
 		<div class="response" id="mce-success-response" style="display:none"></div>
 	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px; display: none"><input type="text" name="b_e4c99d5227b7f742ef5443f24_ed768d4530" value=""></div>
+    <div style="position: absolute; left: -5000px;"><input type="text" name="b_e4c99d5227b7f742ef5443f24_ed768d4530" value=""></div>
 	<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
 </form>
 </div>
@@ -147,7 +140,7 @@ function mce_init_form(){
       var options = { errorClass: 'mce_inline_error', errorElement: 'div', onkeyup: function(){}, onfocusout:function(){}, onblur:function(){}  };
       var mce_validator = $("#mc-embedded-subscribe-form").validate(options);
       $("#mc-embedded-subscribe-form").unbind('submit');//remove the validator so we can get into beforeSubmit on the ajaxform, which then calls the validator
-      options = { url: 'http://3mousetech.us3.list-manage2.com/subscribe/post-json?u=e4c99d5227b7f742ef5443f24&id=ed768d4530&c=?', type: 'GET', dataType: 'json', contentType: "application/json; charset=utf-8",
+      options = { url: 'http://3mousetech.us3.list-manage1.com/subscribe/post-json?u=e4c99d5227b7f742ef5443f24&id=ed768d4530&c=?', type: 'GET', dataType: 'json', contentType: "application/json; charset=utf-8",
                     beforeSubmit: function(){
                         $('#mce_tmp_error_msg').remove();
                         $('.datefield','#mc_embed_signup').each(
