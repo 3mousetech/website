@@ -10,7 +10,7 @@ module.exports =
     # Specify some site properties
     site:
       # The production url of our website
-      url: "http://3mousetech.info"
+      url: "http://3mousetech.com"
 
       # Here are some old site urls that you would like to redirect from
       # oldUrls: [
@@ -35,10 +35,7 @@ module.exports =
       author: "3 Mouse Technology"
 
       # The website author's email
-      email: "nolan@thewordnerd.info"
-
-      # Your company's name
-      copyright: "© 2014 3 Mouse Technology"
+      email: "sales@3mousetech.com"
 
     # Helper Functions
     # ----------------
