@@ -28,6 +28,7 @@
     "docpad-plugin-livereload": "~2.x"
   },
   "scripts": {
-    "start": "node_modules/docpad/bin/docpad-server"
+    "dev": "docpad run",
+    "start": "docpad-server"
   }
 }
