@@ -1,7 +1,7 @@
 FROM ubuntu:13.10
 RUN apt-get update && \
   apt-get upgrade -y && \
-  apt-get install -y software-properties-common git && \
+  apt-get install -y software-properties-common && \
   add-apt-repository ppa:chris-lea/node.js && \
   apt-get update && \
   apt-get install -y nodejs && \
