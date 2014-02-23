@@ -3,7 +3,7 @@
 -var styles = getBlock("styles")
 
 doctype
-html(lang = "en", ng-app = "app")
+html(lang = "en")
   head
     title= getPreparedTitle()
     link(href = "//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css", rel = "stylesheet")
@@ -34,11 +34,6 @@ html(lang = "en", ng-app = "app")
       .container
         footer Copyright &copy; 2014 3 Mouse Technology.
     script(src = "//code.jquery.com/jquery-2.0.3.min.js")
-    script(src = "//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.10/angular.min.js")
-    script(src = "//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js")
-    script(src = "//cdnjs.cloudflare.com/ajax/libs/moment.js/2.4.0/moment.min.js")
-    script(src = "/scripts/vendor/angular-moment/angular-moment.min.js")
     script(src = "//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js")
     script(src = "//netdna.bootstrapcdn.com/bootstrap/3.1.0js/bootstrap.min.js")
-    script(src = "/scripts/index.js")
     !=scripts.toHTML()
