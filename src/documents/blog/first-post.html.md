@@ -1,6 +1,5 @@
 ---
 title: First Post
-type: article
 date: 2014/02/21
 ---
 

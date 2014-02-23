@@ -76,8 +76,9 @@ module.exports =
       )
 
     articles: (database) ->
-      database.findAllLive({type:'article'},[date:-1]).on("add", (doc) ->
+      database.findAllLive({relativeOutDirPath: "blog"}, [date:-1]).on("add", (doc) ->
         doc.setMetaDefaults(layout: "article")
+        doc.setMetaDefaults(type: "article")
         doc.setMetaDefaults(skipTitleHeading: false)
       )
 
