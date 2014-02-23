@@ -71,22 +71,28 @@ module.exports =
   collections:
     pages: (database) ->
       database.findAllLive({type: "page", order: {$exists: true}, isPagedAuto: {$ne: true}}, [order:1,title:1]).on("add", (doc) ->
-        doc.setMetaDefaults(layout: "default")
-        doc.setMetaDefaults(skipTitleHeading: false)
+        doc.setMetaDefaults({
+          layout: "default",
+          skipTitleHeading: false
+        })
       )
 
     articles: (database) ->
       database.findAllLive({relativeOutDirPath: "blog"}, [date:-1]).on("add", (doc) ->
-        doc.setMetaDefaults(layout: "article")
-        doc.setMetaDefaults(type: "article")
-        doc.setMetaDefaults(skipTitleHeading: false)
+        doc.setMetaDefaults({
+          layout: "article",
+          skipTitleHeading: false,
+          type: "article"
+        })
       )
 
     members: (database) ->
       database.findAllLive({relativeOutDirPath: "members"}, [name: 1]).on("add", (doc) ->
-        doc.setMetaDefaults(layout: "default")
-        doc.setMetaDefaults(type: "member")
-        doc.setMetaDefaults(title: doc.attributes.name)
+        doc.setMetaDefaults({
+          layout: "default",
+          title: doc.attributes.name,
+          type: "member"
+        })
       )
 
   # DocPad Events
