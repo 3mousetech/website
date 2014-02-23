@@ -12,7 +12,7 @@ ENV HOME /srv/app
 ENV NODE_ENV production
 EXPOSE 9778
 ADD . /srv/app
-RUN chown -R app $HOME
+RUN chown -R app: $HOME
 USER app
 RUN npm install >/dev/null && \
   rm -rf .npm
