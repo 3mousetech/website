@@ -1,0 +1,9 @@
+---
+title: Members
+type: page
+order: 1
+---
+
+ul
+  each m in getCollection("members").toJSON()
+    li: a(href = m.url)=m.name

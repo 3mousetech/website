@@ -82,6 +82,13 @@ module.exports =
         doc.setMetaDefaults(skipTitleHeading: false)
       )
 
+    members: (database) ->
+      database.findAllLive({relativeOutDirPath: "members"}, [name: 1]).on("add", (doc) ->
+        doc.setMetaDefaults(layout: "default")
+        doc.setMetaDefaults(type: "member")
+        doc.setMetaDefaults(title: doc.attributes.name)
+      )
+
   # DocPad Events
   # =============
 
