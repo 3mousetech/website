@@ -21,8 +21,7 @@
     "docpad-plugin-paged": "~2.x",
     "docpad-plugin-livescript": "~2.x",
     "docpad-plugin-emailobfuscator": "~2.x",
-    "docpad-plugin-eco": "~2.x",
-    "bower": "~1.2.8"
+    "docpad-plugin-eco": "~2.x"
   },
   "devDependencies": {
     "docpad-plugin-livereload": "~2.x"
