@@ -53,9 +53,9 @@ If you're looking for accessibility experts, please contact [sales@3MouseTech.co
 <div id="mc_embed_signup">
 <form action="http://3mousetech.us3.list-manage.com/subscribe/post?u=e4c99d5227b7f742ef5443f24&amp;id=ed768d4530" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 	<h2>Subscribe to our mailing list</h2>
-<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<div class="indicates-required"><span class="asterisk">\*</span> indicates required</div>
 <div class="mc-field-group">
-	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+	<label for="mce-EMAIL">Email Address  <span class="asterisk">\*</span>
 </label>
 	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
 </div>
