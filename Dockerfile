@@ -1,10 +1,10 @@
-FROM ubuntu:13.10
+FROM stackbrew/debian:7.3
 RUN apt-get update && \
   apt-get upgrade -y && \
   apt-get install -y wget && \
   apt-get clean && \
   (wget -O- http://nodejs.org/dist/v0.10.26/node-v0.10.26-linux-x64.tar.gz | tar zxf - -C /opt) && \
-  adduser --system app --home /srv/app --shell /bin/sh
+  useradd --system app --home /srv/app --create-home
 WORKDIR /srv/app
 ENV HOME /srv/app
 ENV NODE_ENV production
