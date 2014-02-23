@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+ul
+  if document.twitter
+    li
+      | Twitter: 
+      a(href = "https://twitter.com/"+document.twitter)="@"+document.twitter
+
+!=content

@@ -89,7 +89,7 @@ module.exports =
     members: (database) ->
       database.findAllLive({relativeOutDirPath: "members"}, [name: 1]).on("add", (doc) ->
         doc.setMetaDefaults({
-          layout: "default",
+          layout: "member",
           title: doc.attributes.name,
           type: "member"
         })
