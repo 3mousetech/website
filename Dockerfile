@@ -15,5 +15,5 @@ ADD . /srv/app
 RUN chown -R app $HOME
 USER app
 RUN npm install >/dev/null && \
-  node_modules/bower/bin/bower install
+  node_modules/bower/bin/bower install --allow-root
 CMD npm start
