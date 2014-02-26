@@ -18,7 +18,9 @@ html(lang = "en")
       .container
         a.sr-only(href = "#content") Skip to main content
         header
-          h1: a(href = "/")=site.title
+          h1
+            img(src = "/images/logo.jpg", alt = "")
+            a(href = "/")=site.title
         nav
           ul.nav.nav-tabs
             each doc in getCollection('pages').toJSON()
