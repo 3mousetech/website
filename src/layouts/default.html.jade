@@ -27,7 +27,7 @@ html(lang = "en")
               - clazz = (document.url === doc.url) ? "active" : null
               li(class = clazz)
                 a(href=doc.url)= doc.title
-        #content
+        main#content
           if !document.skipTitleHeading && !document.isPaged
             header
               h1=document.title
