@@ -12,6 +12,6 @@ First, install [Node.js](http://nodejs.org/). Then, open a command prompt, and i
 
 To test the web site locally, run this command in the root directory of the repository:
 
-    npm start
+    npm run dev
 
-There should be several lines of output, ending with `OK`. Then you can visit the website by going to <http://localhost:9778/>.
+There should be several lines of output, ending with `info: The action completed successfully`. Then you can visit the website by going to <http://localhost:9778/>.
