@@ -1,6 +1,7 @@
 ---
 title: First Post
 date: 2014/02/21
+published: true
 ---
 
-Here is a post! Edit it in _src/documents/blog/first-post.html.md_.
+I am attempting to edit this post in [Prose](http://prose.io).	
