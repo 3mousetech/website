@@ -1,7 +1,6 @@
 ---
 title: Legal
-type: page
-order: 4
+layout: default
 ---
 
 Licenses and Legal
