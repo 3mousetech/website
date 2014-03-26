@@ -4,11 +4,6 @@ type: page
 order: 2
 ---
 
-3MT Core Values
-Date: 10/17/2013
-Latest: 3/14/2014
-Status: Draft 4
-
 This is the official statement of the core values held by 3 Mouse Technology and its membership.
 
 ## Our Core Values

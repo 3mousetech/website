@@ -4,13 +4,6 @@ type: page
 order: 3
 ---
 
-Cooperative Skills
-Original: 10/17/2013
-Latest: 3/14/2014
-Status: Draft 2
-
-##Skills In The 3MT Membership
-
 The 3MT membership has professional level experience making accessible technologies in the following:
 
 * Developing and remediating [iOS][1] Apps

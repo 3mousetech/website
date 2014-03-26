@@ -3,8 +3,6 @@ title: Legal
 layout: default
 ---
 
-Licenses and Legal
-
 ##Copyright
 
 Except where otherwise noted, 3 Mouse Technology, LLC owns the copyright to all information on this site. 3 Mouse Technology  reserves all of the rights associated with copyright in the United States and elsewhere as enforced by treaty.
