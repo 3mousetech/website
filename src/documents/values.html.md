@@ -1,5 +1,5 @@
 ---
-title: Values
+title: Our Values
 type: page
 order: 2
 ---
