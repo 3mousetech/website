@@ -1,0 +1,13 @@
+---
+title: Who We Are
+type: page
+order: 1
+---
+
+<ul>
+	<% for member in @getCollection('members').toJSON(): %>
+		<li>
+			<a href="<%= member.url %>"><%= member.name %></a>
+		</li>
+	<% end %>
+</ul>

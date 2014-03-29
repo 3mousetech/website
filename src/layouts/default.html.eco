@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title><%= @getPreparedTitle() %></title>
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="/stylesheet.css" rel="stylesheet" />
+	<%- @getBlock('styles').add(@site.styles).toHTML() %>
+	<link rel="alternate" type="application/atom+xml" title="<%= @site.title %>" href="/feed.xml" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<%- @getBlock('meta').toHTML() %>
+</head>
+<body>
+	<div id="wrap">
+		<div class="container">
+			<a class="sr-only" href="#content">Skip to main content</a>
+			<header>
+				<h1>
+					<img src="/images/logo.jpg" alt="" />
+					<a href="/"><%= @site.title %></a>
+				</h1>
+			</header>
+			<nav>
+				<ul class="nav nav-tabs">
+					<% for document in @getCollection('pages').toJSON(): %>
+						<li class="<%= 'active' if @document.url is document.url %>">
+							<a href="<%= document.url %>"><%= document.title %></a>
+						</li>
+					<% end %>
+				</ul>
+			</nav>
+			<div role="main" id="content">
+				<% if !@document.skipTitleHeading && !@document.isPaged: %>
+					<header>
+						<h1><%= @document.title %></h1>
+					</header>
+				<% end %>
+				<%- @content %>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="container">
+			<footer>
+				All contents copyright &copy; 2014 3 Mouse Technology, LLC. for information on licenses, please visit our <a href="/legal">Licenses and Legal page</a>.
+			</footer>
+		</div>
+	</div>
+	<%- @getBlock('scripts').add(@site.scripts).toHTML() %>
+</body>
+</html>
