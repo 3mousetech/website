@@ -2,6 +2,10 @@
 layout: default
 ---
 
+<% if @document.photo: %>
+	<div style="float: left; padding: 1em;"><img src="<%= @document.photo %>" alt="" /></div>
+<% end %>
+
 <ul>
 	<% if @document.twitter: %>
 		<li>

@@ -4,10 +4,16 @@ type: page
 order: 1
 ---
 
-<ul>
-	<% for member in @getCollection('members').toJSON(): %>
-		<li>
-			<a href="<%= member.url %>"><%= member.name %></a>
-		</li>
+<% for member in @getCollection('members').toJSON(): %>
+	<h2 style="clear: left;">
+		<a href="<%= member.url %>">
+			<% if member.photo: %>
+				<img style="float: left; padding: 1em;" src="<%= member.photo %>" alt="" />
+			<% end %>
+			<%= member.name %>
+		</a>
+	</h2>
+	<% if member.contentRenderedWithoutLayouts: %>
+		<%- member.contentRenderedWithoutLayouts.substring(0, member.contentRenderedWithoutLayouts.indexOf('</p>') + 4) %>
 	<% end %>
-</ul>
+<% end %>
