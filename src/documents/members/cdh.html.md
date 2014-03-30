@@ -1,6 +1,7 @@
 ---
 name: Chris Hofstader
 twitter: gonz_blinko
+photo: /images/photos/cdh.jpg
 ---
 
 Chris led the development of JAWS, the world’s most popular screen reader, for six years as Vice President of Software Engineering at Freedom Scientific. Since leaving FS in 2004, Chris has been working as an accessibility research contractor, has written the always interesting and often controversial  [ChrisHofstader.Com](http://www.chrishofstader.com) blog and has become a noted activist on issues regarding social justice and people with disabilities.
