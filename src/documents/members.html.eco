@@ -7,9 +7,11 @@ order: 1
 <% for member in @getCollection('members').toJSON(): %>
 	<h2 style="clear: left;">
 		<a href="<%= member.url %>">
-			<% if member.photo: %>
-				<img style="float: left; padding: 1em;" src="<%= member.photo %>" alt="" />
-			<% end %>
+                <% if member.photo: %>
+                        <img style="float: left; padding: 1em;" src="<%= member.photo %>" alt="Photo: <%= member.name %>" />
+                <% else: %>
+                        <img style="float: left; padding: 1em;" src="/images/one_mouse.png" alt="" />
+                <% end %> 
 			<%= member.name %>
 		</a>
 	</h2>
