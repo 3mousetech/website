@@ -1,7 +1,7 @@
 ---
 name: Christopher Toth
 twitter: mongoose_q
-photo: /images/photos/q.jpg
+photo: /images/photos/q-img.jpg
 ---
 
 Christopher Toth founded and leads [GetAccessibleApps](http://www.getaccessibleapps.com), authors and publishers of the popular QRead accessible epub reader and ChickenNugget Twitter client. Toth is recognized widely as being one of the top blind Python programmers and accessible app designers in the community of engineers with disabilities.
