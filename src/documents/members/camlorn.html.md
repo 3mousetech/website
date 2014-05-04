@@ -1,5 +1,5 @@
 ---
-name: Austin &#8220;Camlorn&#8221; Hicks 
+name: Austin "Camlorn" Hicks 
 twitter: camlorn38
 photo: /images/photos/cam.jpg
 ---
