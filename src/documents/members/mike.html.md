@@ -3,7 +3,7 @@ name: Mike Calvo
 twitter: mikecalvo
 ---
 
-Mike Calvo,  the founder and former CEO of Serotek Corporation, was Born totally blind to Cuban parents in Miami, Florida. Mike, often rejected by teachers and others in authority who said he should not expect to accomplish much, if anything, with his life, would find acceptance among Miami’s 1980’s cultures of drugs, gangs, and music and, over time, he set out to make a difference in his own life that would increase his options for successful employment. By doing so, he has swung wide the doors of change for countless numbers of blind and vision impaired individuals. 
+Mike Calvo,  the founder and former CEO of Serotek Corporation, was born totally blind to Cuban parents in Miami, Florida. Mike, often rejected by teachers and others in authority who said he should not expect to accomplish much, if anything, with his life, would find acceptance among Miami’s 1980’s cultures of drugs, gangs, and music and, over time, he set out to make a difference in his own life that would increase his options for successful employment. By doing so, he has swung wide the doors of change for countless numbers of blind and vision impaired individuals. 
 
 “I called Chris to discuss a few projects we might do with the [AIR Foundation](http://www.accessibilityisaright.org),” says Calvo. “We realized that we had a lot of blind friends with excellent software skills. We also realized that there is a growing demand for accessibility contractors and we decided to launch 3MT to help fill this large and growing requirement in industry and government.”
 
