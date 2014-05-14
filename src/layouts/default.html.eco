@@ -1,51 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-        <meta charset="utf-8">
-	<title><%= @getPreparedTitle() %></title>
-	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" />
-	<link href="/stylesheet.css" rel="stylesheet" />
-	<%- @getBlock('styles').add(@site.styles).toHTML() %>
-	<link rel="alternate" type="application/atom+xml" title="<%= @site.title %>" href="/feed.xml" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<%- @getBlock('meta').toHTML() %>
-</head>
-<body>
-	<div id="wrap">
-		<div class="container">
-			<a class="sr-only" href="#content">Skip to main content</a>
-			<header>
-				<h1>
-					<img src="/images/logo.jpg" alt="" />
-					<a href="/"><%= @site.title %></a>
-				</h1>
-			</header>
-			<nav>
-				<ul class="nav nav-tabs">
-					<% for document in @getCollection('pages').toJSON(): %>
-						<li class="<%= 'active' if @document.url is document.url %>">
-							<a href="<%= document.url %>"><%= document.title %></a>
-						</li>
-					<% end %>
-				</ul>
-			</nav>
-			<div role="main" id="content">
-				<% if !@document.skipTitleHeading && !@document.isPaged: %>
-					<header>
-						<h1><%= @document.title %></h1>
-					</header>
-				<% end %>
-				<%- @content %>
-			</div>
-		</div>
-	</div>
-	<div id="footer">
-		<div class="container">
-			<footer>
-				All contents copyright &copy; 2014 3 Mouse Technology, LLC. for information on licenses, please visit our <a href="/legal">Licenses and Legal page</a>.
-			</footer>
-		</div>
-	</div>
-	<%- @getBlock('scripts').add(@site.scripts).toHTML() %>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <title><%= @getPreparedTitle() %></title>
+    <link href="/styles/stylesheet.css" rel="stylesheet">
+    <%- @getBlock('styles').add(@site.styles).toHTML() %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="alternate" type="application/atom+xml" title="<%= @site.title %>" href="/feed.xml">
+    <!--[if lte IE 8]>
+      <script>
+        var list='footer,header,article,main,nav,time'.split(','),
+            el;
+        while(el=list.pop()){
+            document.createElement(el);
+        }
+      </script>
+    <![endif]-->
+    <%- @getBlock('meta').toHTML() %>
+  </head>
+  <body>
+    <div id="wrap">
+      <div class="container">
+        <a class="skiplink" href="#content">Skip to main content</a>
+        <p role="banner" class="logo">
+          <img src="/images/logo.jpg" alt="Our drawn logo of three mouse heads wearing dark glasses">
+          <a href="/"><%= @site.title %></a>
+        </p>
+        <nav>
+          <ul>
+            <% for document in @getCollection('pages').toJSON(): %>
+            <li class="<%= 'active' if @document.url is document.url %>">
+              <a href="<%= document.url %>"><%= document.title %></a>
+            </li>
+            <% end %>
+          </ul>
+        </nav>
+        <main role="main" id="content">
+        <!-- working for you, it works for us-->
+          <% if !@document.skipTitleHeading && !@document.isPaged: %>
+          <h1><%= @document.title %></h1>
+          <% end %>
+
+          <%- @content %>
+
+        </main>
+      </div>
+    </div>
+    <footer role="contentinfo" class="footer">
+      <div>
+        <p>All contents copyright &#169;2014 3 Mouse Technology, LLC.</p>
+        <p>For information on licenses, please visit our <a href="/legal">Licenses and Legal page</a>.</p>
+      </div>
+    </footer>
+    <%- @getBlock('scripts').add(@site.scripts).toHTML() %>
+  </body>
 </html>

@@ -2,17 +2,20 @@
 layout: default
 ---
 
-<% if @document.photo: %>
-	<div style="float: left; padding: 1em;"><img src="<%= @document.photo %>" alt="" /></div>
-<% end %>
+<div class="member">
+  <% if @document.photo: %>
+    <img src="<%= @document.photo %>" alt="Headshot">
+  <% end %>
 
-<ul>
-	<% if @document.twitter: %>
-		<li>
-			Twitter: 
-			<a href="https://twitter.com/<%= @document.twitter %>">@<%= @document.twitter %></a>
-		</li>
-	<% end %>
-</ul>
+  <%- @content %>
 
-<%- @content %>
+  <!-- no ul for now until we have more than 1 item -->
+  <% if @document.twitter: %>
+    <p class="twit">
+      <span class="ac">Twitter: </span>
+      <a href="https://twitter.com/<%= @document.twitter %>">
+        @<%= @document.twitter %>
+      </a>
+    </p>
+  <% end %>
+</div>

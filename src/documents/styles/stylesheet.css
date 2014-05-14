@@ -1,0 +1,416 @@
+/* 3 Mouse Tech */
+
+/*logo*/
+@font-face {
+    font-family: 'saxmonoregular';
+    src: url('/fonts/saxmono-webfont.eot');
+    src: url('/fonts/saxmono-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/saxmono-webfont.woff') format('woff'),
+         url('/fonts/saxmono-webfont.ttf') format('truetype'),
+         url('/fonts/saxmono-webfont.svg#saxmonoregular') format('svg');
+} 
+/*headings*/
+@font-face {
+    font-family: 'nunitobold';
+    src: url('/fonts/nunito-bold-webfont.eot');
+    src: url('/fonts/nunito-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/nunito-bold-webfont.woff') format('woff'),
+         url('/fonts/nunito-bold-webfont.ttf') format('truetype'),
+         url('/fonts/nunito-bold-webfont.svg#nunitobold') format('svg');
+}
+/*body text*/
+@font-face {
+    font-family: 'latoregular';
+    src: url('/fonts/lato-reg-webfont.eot');
+    src: url('/fonts/lato-reg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/lato-reg-webfont.woff') format('woff'),
+         url('/fonts/lato-reg-webfont.ttf') format('truetype'),
+         url('/fonts/lato-reg-webfont.svg#latoregular') format('svg');
+}
+
+html, body, form, fieldset, legend, th, td, dt, dd {
+  margin: 0;
+  padding: 0;
+}
+
+/*for those born after... */
+header, nav, main, article, footer {
+  display: block;
+}
+time {
+  display: inline-block;
+}
+
+img {
+  vertical-align: bottom;
+  border: 0;
+}
+
+a[title]:focus:after { 
+  content: ' ' attr(title);
+}
+a[title]:hover:focus:after { 
+  content: '';
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+ins {
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.ac {
+    position: absolute;
+    left: -999em;
+    height: 0;
+}
+
+/* http://www.pmob.co.uk/temp/sticky-footer-ie8new.htm */
+html, body {
+  height: 100%;
+}
+
+body {
+  color: #333;
+  font: 100%/130% latoregular,'dejavu sans',helvetica,sans-serif;
+  background: #f3f1e5 url(/images/bg_yeller.jpg);
+}
+    /*opera resizing min-height*/
+    body:before {
+      content: '';
+      float: left;
+      width: 0;
+      height: 100%;
+      margin-top: -32767px;/*opera limit*/
+    }
+
+#wrap {
+  min-height: 100%;
+}
+
+.container {
+  position: relative;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 0 1em 5em;
+  word-spacing: 3px;/*Lato is kinda close..*/
+}
+
+.skiplink {
+  position: absolute;
+  left: 0;
+  top: .3em;
+  display: block;
+  margin-left: -9999px;
+  padding: 5px;
+  font-size: 1.4em;
+  text-align: center;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #505050;
+  box-shadow: 0px 1px 2px  rgba(51,51,51,0.4);
+}
+      .skiplink:focus {
+        margin-left: 7em;
+        text-decoration: none;
+      }
+
+.logo {
+  float: left;
+  width: 470px;
+  margin: 0;
+  font: 2em/75px nunitobold,'courier new',monospace;
+}
+    .logo a {
+        display: inline-block;
+        text-decoration: none;
+    }
+
+a {
+  color: #477444;
+  text-decoration: none;
+}
+    a:hover,
+    a:focus {
+      text-decoration: underline;
+    }
+ 
+.container a {
+  font-weight: bold;
+}
+
+ul, ol {
+  margin: 0 0 1.5em 22px;
+  padding: 0;
+}
+
+li {
+  margin-bottom: .4em;
+}
+
+nav {
+  margin: 0;
+  padding-top: 1em;
+  overflow: hidden;
+}
+    nav ul {
+      margin: 0;
+      padding-right: 2em;
+      list-style: none;
+      text-align: right;
+    }
+    nav li {
+      display: inline;
+    }
+    nav a {
+      display: inline-block;
+      vertical-align: top;
+      padding: 10px 2px 10px 5px;
+      font-weight: bold;
+    }
+        nav a:before {
+          content: '|\0a';
+          display: inline-block;
+          vertical-align: top;
+          padding: 0 10px 0 0;
+          color: #e3c289;
+        }
+        nav li:first-child a:before {
+          content: '';
+          display: none;
+        }
+          
+    nav .active a {
+      color: #000;
+    }
+    nav a:focus,
+    nav a:hover {
+      color: #000;
+      text-decoration: none;
+    }
+
+#content {
+  clear: both;
+  padding-top: 1.5em;
+}
+
+.banner {
+  width: 690px;
+  margin: 2em auto 1em;
+  background: url(/images/paper2.png) 0 0 repeat-x;
+  border-top: 1px solid #e3daab;
+  border-radius: 2px 2px 0 0;
+}
+    .banner p {
+      margin: 0;
+      padding: 10px 20px 40px 40px;
+      font: normal 2em/1 nunitobold,verdana,'dejavu sans',sans-serif;
+    }
+      
+h1, h2, h3, h4 {
+  font-family: nunitobold,verdana,'dejavu sans',sans-serif;
+}
+    h1 {
+      margin: 1em 0;
+    }
+    h2 {
+      margin: 2em 0 .5em;
+      font-size: 1.4em;
+    }
+    h3 {
+      margin: 1em 0 .5em;
+      font-size: 1.3em;
+    }
+
+p {
+  margin: 0 0 1.5em;
+}
+
+/* members */
+.members {
+  margin-top: 2em;
+}
+
+.members div {
+  margin-bottom: 2em;
+  overflow: hidden;
+} 
+    .members h2 {
+      margin: 0 0 .2em 180px;
+    }
+        .members h2 a {
+          padding: 0 5px;
+        }
+        .members h2+a {
+          float: left;
+          margin-top: -1.4em;
+          padding: 1em;
+          background-color: rgba(255,255,255,0.2);
+          border: 1px solid #ddd;
+        }
+        .members img {
+          border: 1px solid #e3daab;
+        }
+    .members p {
+      margin-left: 180px;
+    }
+
+/* individual member */
+.member {
+  margin-top: 2em;
+  overflow: hidden;
+}
+    .member img {
+      float: left;
+      padding: 1em;
+      background-color: rgba(255,255,255,0.2);
+      border: 1px solid #e3daab;
+    }
+    .member p {
+      margin-left: 180px;
+    }
+    .twit a {
+      display: inline-block;
+      vertical-align: middle;
+      min-height: 20px;
+    }
+        .twit:before {
+          content: '';
+          display: inline-block;
+          vertical-align: middle;
+          width: 30px;
+          height: 20px;
+          background: url(/images/sprite.png) 0 -41px no-repeat;
+        }
+        .twit:focus:before,
+        .twit:hover:before {
+          background-position: -31px -41px;
+        }
+
+/* bloggitty blog blog blog */
+article header, article footer {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 1.5em 1em 0;
+}
+    article h1 {
+      margin: 0;
+    }
+    article footer span,
+    article footer time {
+      color: #505050;
+      font-size: .8em;
+    }
+    time i {
+      font-style: normal;
+    }
+
+
+/* chimp */
+#mc_embed_signup {
+}
+
+fieldset {
+  display: inline-block;
+  padding: 1em;
+  border: 1px solid #e3daab;
+}
+    fieldset div {
+      overflow: hidden;
+    }
+
+label, input[type=text],
+input[type=email] {
+  float: left;
+  min-width: 8em;
+  margin: 0 1em 1em 0;
+  padding: 10px;
+  font: bold 1em/1.1 latoregular,'dejavu sans',helvetica,sans-serif;
+}
+        input[type=text], input[type=email] {
+          width: 15em;
+          margin: 0 0 1em 0;
+          background-color: #fdfcf3;
+          border: 1px solid #e3daab;
+          border-radius: 3px;
+        }
+                input[type=text]:focus, input[type=email]:focus {
+                  background-color: #fff;
+                  border-color: #a98e55;
+                  outline: 0;
+                }
+        input[type=submit] {
+          box-sizing: content-box;
+          float: right;
+          width: 15em;
+          margin: 10px 0;
+          padding: 10px 0 10px 10px;
+          color: #fff;
+          font-weight: bold;
+          background-color: #477444;
+          border: 0;
+          border-radius: .6em;
+          cursor: pointer;
+          -moz-transition: background-color 0.5s ease-out;
+          -webkit-transition: background-color 0.5s ease-out;
+          -o-transition: background-color 0.5s ease-out;
+          transition: background-color 0.5s ease-out; 
+        }
+                input[type=submit]:focus,
+                input[type=submit]:hover {
+                  background-color: #41c337;
+                  border: 1px solid #477444;
+                }
+
+#mc_embed_signup span {
+  vertical-align: middle;
+  color: #c60;
+  font-weight: bold;
+  font-size: 1.8em;
+  line-height: .6em; 
+}
+  
+
+.footer {
+  clear: both;
+  position: relative;  
+  max-width: 80%;
+  height: 5em;
+  margin: -4.5em auto 0;
+  padding: 0 2em;
+}
+    .footer div {
+      background-color: #e3daab;
+      border-radius: 3px;
+    }
+        .footer p {
+            width: 50%;
+            display: inline-block;
+            vertical-align: top;
+            margin: 0;
+            padding: 10px;
+            color: #000;
+            font-size: .9em;
+        }
+        .footer div p:first-child {
+            width: 40%;
+            margin-right: -7px;
+            text-align: right;
+        }
+        .footer a {
+          color: #016;
+          text-decoration: underline;

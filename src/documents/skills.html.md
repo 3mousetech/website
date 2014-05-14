@@ -10,7 +10,7 @@ The 3MT membership has professional level experience making accessible technolog
 * Developing and remediating  [Android][2] apps
 * Developing applications and AT on [Windows][3], [Macintosh/OSX][4], iOS and Android
 * Developing screen reader configurations for [Window-Eyes][5], [NVDA][6], [JAWS][7] and other popular and configurable AT
-* Developing screen Readers and other access technologies
+* Developing screen readers and other access technologies
 * [Web Accessibility][8] design and remediation for standards compliance
 * [Software Quality Assurance/Testing][9]
 

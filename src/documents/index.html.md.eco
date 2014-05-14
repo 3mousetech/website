@@ -5,9 +5,13 @@ order: 0
 skipTitleHeading: true
 ---
 
-#Welcome to 3 Mouse Technology
+<div class="banner">
+ <p>Your accessibility requirements solved by technical experts who use assistive technology themselves</p>
+</div>
 
-We're 3 Mouse Technology (3MT), a new company of access technology experts. Our goals are universal accessibility through universal design, cooperative governance, and full inclusion of people with print disabilities in every step toward full accessibility.
+#We are 3 Mouse Technology (3MT)
+
+...a new company of access technology experts. Our goals are universal accessibility through universal design, cooperative governance, and full inclusion of people with print disabilities in every step toward full accessibility.
 
 People ask us, "Where can we find blind software engineers?". Now, with 3MT, we answer, "We're here! We engineer!"
 

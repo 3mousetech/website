@@ -4,18 +4,24 @@ type: page
 order: 1
 ---
 
+<div class="members">
 <% for member in @getCollection('members').toJSON(): %>
-	<h2 style="clear: left;">
-		<a href="<%= member.url %>">
-                <% if member.photo: %>
-                        <img style="float: left; padding: 1em;" src="<%= member.photo %>" alt="Photo: <%= member.name %>" />
-                <% else: %>
-                        <img style="float: left; padding: 1em;" src="/images/one_mouse.png" alt="" />
-                <% end %> 
-			<%= member.name %>
-		</a>
-	</h2>
-	<% if member.contentRenderedWithoutLayouts: %>
-		<%- member.contentRenderedWithoutLayouts.substring(0, member.contentRenderedWithoutLayouts.indexOf('</p>') + 4) %>
-	<% end %>
+  <div>
+    <h2>
+      <a href="<%= member.url %>">
+        <%= member.name %>
+      </a>
+    </h2>
+    <a href="<%= member.url %>" tabindex="-1">
+  <% if member.photo: %>
+      <img src="<%= member.photo %>" alt="Photo: <%= member.name %>">
+  <% else: %>
+      <img src="/images/one_mouse.png" alt="No photo">
+  <% end %> 
+    </a>
+    <% if member.contentRenderedWithoutLayouts: %>
+        <%- member.contentRenderedWithoutLayouts.substring(0, member.contentRenderedWithoutLayouts.indexOf('</p>') + 4) %>
+    <% end %>
+  </div>
 <% end %>
+</div>

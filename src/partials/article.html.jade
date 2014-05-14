@@ -5,12 +5,12 @@ article
         =article.title
       else
         a(href = article.url)=article.title
-  !=article.contentRenderedWithoutLayouts
   footer
-    | Posted 
+    | <span>posted</span> 
     time(datetime = article.date, am-time-ago = article.date.valueOf())
       i=article.date.toLocaleDateString()
     &nbsp;
     if article.tags
       | Tags: 
       !=article.tags.map(function(tag) { return "<a href='/tags/"+tag+"'>"+tag+"</a>" }).join(", ")
+  !=article.contentRenderedWithoutLayouts
