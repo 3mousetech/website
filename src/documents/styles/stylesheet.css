@@ -141,9 +141,7 @@ body {
     
 @media screen and (min-width: 650px) {
 .logo {
-  float: left;
-  width: 470px;
-  font-size: 2em;
+  font-size: 3em;
   line-height: 75px;
   text-align: left;
 }
@@ -184,14 +182,13 @@ nav {
 }
 @media screen and (min-width: 600px) {
   nav {
-    min-width: 400px;
-    text-align: right;
+    padding-left: 115px;
+    text-align: left;
   }
 }
 
     nav ul {
       margin: 0;
-      padding-right: 2em;
       list-style: none;
     }
     nav li {
@@ -343,16 +340,13 @@ article header, article footer {
 
 
 /* chimp */
-#mc_embed_signup {
-}
-
 fieldset {
   display: inline-block;
   padding: 1em;
   border: 1px solid #e3daab;
 }
         label, input[type=text],
-        input[type=email] {
+        input[type=email], textarea {
           min-width: 8em;
           margin: 0 .6em 5px 0;
           padding: 10px;
@@ -361,12 +355,15 @@ fieldset {
         label {
           display: block;
         }
-        input[type=text], input[type=email] {
+        input[type=text], input[type=email], textarea {
           width: 15em;
           margin: 0 0 1em 0;
           background-color: #fdfcf3;
           border: 1px solid #e3daab;
           border-radius: 3px;
+        }
+        textarea {
+          width: auto;
         }
                 input[type=text]:focus, input[type=email]:focus {
                   background-color: #fff;
@@ -381,7 +378,7 @@ fieldset {
           color: #fff;
           font-weight: bold;
           background-color: #477444;
-          border: 0;
+          border: 1px solid transparent;
           border-radius: .6em;
           cursor: pointer;
           -moz-transition: background-color 0.5s ease-out;
@@ -412,7 +409,8 @@ fieldset {
       }
 }
 
-#mc_embed_signup span {
+#mc_embed_signup span,
+.contact span {
   vertical-align: middle;
   color: #c60;
   font-weight: bold;

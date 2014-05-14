@@ -1,7 +1,7 @@
 ---
 title: Our Values
 type: page
-order: 2
+order: 3
 ---
 
 This is the official statement of the core values held by 3 Mouse Technology and its membership.

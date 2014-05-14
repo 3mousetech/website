@@ -1,7 +1,7 @@
 ---
 title: Skills
 type: page
-order: 3
+order: 4
 ---
 
 The 3MT membership has professional level experience making accessible technologies in the following:
