@@ -6,6 +6,7 @@
     <link href="/styles/stylesheet.css" rel="stylesheet">
     <%- @getBlock('styles').add(@site.styles).toHTML() %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="alternate" type="application/atom+xml" title="<%= @site.title %>" href="/feed.xml">
     <!--[if lte IE 8]>
       <script>
