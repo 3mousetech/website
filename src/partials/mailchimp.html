@@ -28,7 +28,7 @@
     </fieldset>
   </form>
 </div>
-<script type="text/javascript">
+<script>
 var fnames = new Array();var ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';
 try {
     var jqueryLoaded=jQuery;
@@ -39,7 +39,6 @@ try {
 var head= document.getElementsByTagName('head')[0];
 if (!jqueryLoaded) {
     var script = document.createElement('script');
-    script.type = 'text/javascript';
     script.src = '//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js';
     head.appendChild(script);
     if (script.readyState && script.onload!==null){
@@ -77,7 +76,6 @@ function mce_preload_check(){
         return;
     }
     var script = document.createElement('script');
-    script.type = 'text/javascript';
     script.src = 'http://downloads.mailchimp.com/js/jquery.form-n-validate.js';
     head.appendChild(script);
     try {

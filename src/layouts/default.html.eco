@@ -22,10 +22,6 @@
     <div id="wrap">
       <div class="container">
         <a class="skiplink" href="#content">Skip to main content</a>
-        <p role="banner" class="logo">
-          <img src="/images/logo.jpg" alt="Our drawn logo of three mouse heads wearing dark glasses">
-          <a href="/"><%= @site.title %></a>
-        </p>
         <nav>
           <ul>
             <% for document in @getCollection('pages').toJSON(): %>
@@ -35,8 +31,19 @@
             <% end %>
           </ul>
         </nav>
+      <% if @document.skipTitleHeading: %>
+        <h1 class="logo">
+      <% else: %>
+        <p class="logo">
+      <% end %>
+          <img src="/images/logo.jpg" alt="Our drawn logo of three mouse heads wearing dark glasses">
+          <a href="/"><%= @site.title %></a>
+      <% if @document.skipTitleHeading: %>
+        </h1>
+      <% else: %>
+        </p>
+      <% end %>
         <main role="main" id="content">
-        <!-- working for you, it works for us-->
           <% if !@document.skipTitleHeading && !@document.isPaged: %>
           <h1><%= @document.title %></h1>
           <% end %>
@@ -54,7 +61,7 @@
     </footer>
     <%- @getBlock('scripts').add(@site.scripts).toHTML() %>
     <!-- Piwik -->
-    <script type="text/javascript">
+    <script>
       var _paq = _paq || [];
       _paq.push(['trackPageView']);
       _paq.push(['enableLinkTracking']);
@@ -66,7 +73,7 @@
         g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
     </script>
-    <noscript><p><img src="http://3mousetech.com/analytics/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+    <noscript><p><img src="http://3mousetech.com/analytics/piwik.php?idsite=1" alt=""></p></noscript>
     <!-- End Piwik Code -->
   </body>
 </html>

@@ -5,8 +5,10 @@ dynamic: true
 ---
 
 .jumbotron
-  h1 500 Internal Server Error
   p
     | Ooops! Something went wrong while we were processing your request to <code>#{req.url}</code>. Here's the details:
   p
     pre= err.message || err.stack
+
+  p
+    | If our server puked, try refreshing the site again after some time.
