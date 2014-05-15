@@ -3,7 +3,7 @@ ENV HOME /home/default
 EXPOSE 9778
 WORKDIR /home/default
 USER default
-ADD package.json $HOME
+ADD package.json $HOME/package.json
 RUN npm install >/dev/null && \
   rm -rf .npm
 ADD . $HOME/
