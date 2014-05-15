@@ -4,8 +4,8 @@ date: 2014/05/15
 published: true
 ---
 
-FOR IMMEDIATE RELEASE
-Media Contact: Chris Hofstader, [cdh@3MouseTech.com](mailto:cdh@3MouseTech.com)
+FOR IMMEDIATE RELEASE  
+Media Contact: Chris Hofstader, [cdh@3MouseTech.com](mailto:cdh@3MouseTech.com)  
 Sales Contact: 3MT Sales Team, [sales@3MouseTech.com](mailto:sales@3MouseTech.com)
 
 St. Petersburg, FL (May 15 2014) – 3 Mouse Technology (www.3MouseTech.com), a new and very different accessibility consulting company, announced today that it is open for business.   
