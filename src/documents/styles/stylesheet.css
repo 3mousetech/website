@@ -11,6 +11,15 @@
 } 
 /*headings*/
 @font-face {
+    font-family: 'crimson_textsemibold';
+    src: url('/fonts/crimsontext-semibold-webfont.eot');
+    src: url('/fonts/crimsontext-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/crimsontext-semibold-webfont.woff') format('woff'),
+         url('/fonts/crimsontext-semibold-webfont.ttf') format('truetype'),
+         url('/fonts/crimsontext-semibold-webfont.svg#crimson_textsemibold_italic') format('svg');
+}
+
+@font-face {
     font-family: 'nunitobold';
     src: url('/fonts/nunito-bold-webfont.eot');
     src: url('/fonts/nunito-bold-webfont.eot?#iefix') format('embedded-opentype'),
@@ -18,6 +27,16 @@
          url('/fonts/nunito-bold-webfont.ttf') format('truetype'),
          url('/fonts/nunito-bold-webfont.svg#nunitobold') format('svg');
 }
+/* banner */
+@font-face {
+    font-family: 'crimson_textsemibold_italic';
+    src: url('/fonts/crimsontext-semibolditalic-webfont.eot');
+    src: url('/fonts/crimsontext-semibolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/crimsontext-semibolditalic-webfont.woff') format('woff'),
+         url('/fonts/crimsontext-semibolditalic-webfont.ttf') format('truetype'),
+         url('/fonts/crimsontext-semibolditalic-webfont.svg#crimson_textsemibold_italic') format('svg');
+}
+
 /*body text*/
 @font-face {
     font-family: 'latoregular';
@@ -86,8 +105,13 @@ html, body {
 
 body {
   color: #333;
-  font: 100%/130% latoregular,'dejavu sans',helvetica,sans-serif;
+  font: 120%/130% 'dejavu sans',helvetica,sans-serif;
   background: #f3f1e5 url(/images/bg_yeller.jpg);
+}
+@media screen and (min-width: 500px) {
+  body {
+    font: 100%/130% latoregular,'dejavu sans',helvetica,sans-serif;
+  }
 }
     /*opera resizing min-height*/
     body:before {
@@ -104,10 +128,19 @@ body {
 
 .container {
   position: relative;
-  max-width: 80%;
   margin: 0 auto;
   padding: 0 1em 5em;
   word-spacing: 3px;/*Lato is kinda close..*/
+}
+@media screen and (min-width: 950px) {
+  .container, .footer {
+    max-width: 85%;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .container, .footer {
+    max-width: 70%;
+  }
 }
 
 .skiplink {
@@ -124,10 +157,10 @@ body {
   border: 1px solid #505050;
   box-shadow: 0px 1px 2px  rgba(51,51,51,0.4);
 }
-      .skiplink:focus {
-        margin-left: 7em;
-        text-decoration: none;
-      }
+    .skiplink:focus {
+      margin-left: 7em;
+      text-decoration: none;
+    }
 
 nav {
   margin: 0;
@@ -138,67 +171,133 @@ nav {
 nav ul {
   margin: 0;
   list-style: none;
+  border-top: 1px solid #477444;
 }
     nav li {
       display: inline;
     }
     nav a {
-      display: inline-block;
-      vertical-align: top;
-      padding: 10px 2px 10px 5px;
-      font-weight: bold;
+      display: block;
+      padding: 15px 2px 15px 15px;
+      font-size: .9em;
+      text-align: left;
+      font-variant: small-caps;
+      background-color: rgba(255,255,255,0.2);
+      border-bottom: 1px solid #477444;
     }
-            nav .active a {
-              color: #000;
-            }
-            nav a:focus,
-            nav a:hover {
-              color: #000;
-              text-decoration: none;
-            }
+        nav .active a {
+          color: #000;
+        }
+        nav a:focus,
+        nav a:hover {
+          color: #000;
+          text-decoration: none;
+          background-color: #fff;
+        }
+
+@media screen and (min-width: 500px) {
+  nav ul {
+    text-align: center;
+    border-top: 0;
+  }
+      nav a {
+        display: inline-block;
+        vertical-align: top;
+        padding: 15px 12px 15px 15px;
+        font-size: 1em;
+        font-variant: none;
+        background-color: transparent;
+        border-bottom: 0;
+      }
+}
 
 @media screen and (min-width: 800px) {
   nav {
-    padding-left: 115px;
-    text-align: right;
-    padding-right: 2em;
+    padding: 0 2em .6em 115px;
+    border-bottom: 1px solid #e3daab;
   }
-      nav a:before {
-        content: '|\0a';
-        display: inline-block;
-        vertical-align: top;
-        padding: 0 10px 0 0;
-        color: #e3c289;
+      nav ul {
+        text-align: right;
       }
-      nav li:first-child a:before {
-        content: '';
-        display: none;
+      nav a {
+        padding: 10px 2px 10px 5px;
       }
+          nav a:before {
+            content: '|\0a';
+            display: inline-block;
+            vertical-align: top;
+            padding: 0 10px 0 0;
+            color: #e3c289;
+          }
+          nav li:first-child a:before {
+            content: '';
+            display: none;
+          }
+          nav a:focus,
+          nav a:hover {
+            background-color: transparent;
+          }
 }
 
 /* is sometimes an h1, other times a p */
 .logo {
-  margin: 0;
-  font: 1em nunitobold,'dejavu sans',sans-serif;
+  font-size: 1.2em;
   text-align: center;
 }
-    .logo img {
-      display: block;
-      margin: 0 auto;
-    }
-    
-@media screen and (min-width: 650px) {
-.logo {
-  font-size: 3em;
-  line-height: 75px;
-  text-align: left;
-}
-    .logo a, .logo img {
-        display: inline-block;
-    }
     .logo a {
-        text-decoration: none;
+      display: block;
+      text-decoration: none;
     }
+        .logo a:focus,
+        .logo a:hover {
+          color: #016;
+          text-decoration: none;
+        }
+
+@media screen and (min-width: 500px) {
+  .logo a, .logo span {
+    display: inline;
+    vertical-align: top;
+    font: 1em/100px nunitobold,verdana,sans-serif;
+  }
+}
+    
+@media screen and (min-width: 750px) {
+  .logo {
+    margin: 1em 0 0;
+    font: 2em/1 nunitobold,verdana,sans-serif;
+    text-align: left;
+    vertical-align: middle;
+  } 
+  h1.logo {
+    line-height: 124px;
+  }
+      .logo img {
+        vertical-align: top;
+      }
+      h1.logo span {
+        display: inline-block;
+        vertical-align: top;
+        margin-left: -1.5em;
+        padding: .9em 1.4em;
+        color: #fff;
+        font: bold 1em saxmonoregular,'courier new',monospace;
+        text-align: center;
+        background-color: rgba(71,116,68,.4);
+        -moz-transition: background-color 0.5s ease-out;
+        -webkit-transition: background-color 0.5s ease-out;
+        -o-transition: background-color 0.5s ease-out;
+        transition: background-color 0.5s ease-out; 
+        border-radius: 50%;
+      }
+          h1.logo span+span {
+            margin-right: -1em;
+          }
+
+          h1.logo a:focus span,
+          h1.logo a:hover span {
+            background-color: rgba(0,17,102,.4);
+          }
 }
 
 a {
@@ -216,41 +315,91 @@ a {
 
 #content {
   clear: both;
-  padding-top: 1.5em;
+  margin-top: 1.5em;
+  border-top: 1px solid #e3daab;
 }
 
 .banner {
-  max-width: 690px;
-  margin: 2em auto 1em;
-  background: url(/images/paper2.png) 0 0 repeat-x;
-  border-top: 1px solid #e3daab;
-  border-radius: 2px 2px 0 0;
+  padding: 1em;
+  margin-bottom: 2em;
+  color: #000;
+  font: italic 1.4em georgia,serif;
+  border-bottom: 1px solid #e3daab;
 }
-    .banner p {
-      margin: 0;
-      padding: 10px 20px 40px 40px;
-      font: normal 2em/1 nunitobold,verdana,'dejavu sans',sans-serif;
-    }
+@media screen and (min-width: 500px) {
+  .banner {
+    font: normal 2em crimson_textsemibold_italic,georgia,serif;
+  }
+}
 
+.banner p {
+  max-width: 690px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 850px) {
+  .banner {
+    font-size: 3em;
+  }
+
+  .banner~div {
+    display: inline-block;
+    vertical-align: top;
+    width: 28%;
+    padding-left: 3em;
+  }
+      .banner+div {
+        padding-left: 0;
+      }
+      .banner~div h2 {
+        margin-top: 0;
+      }
+}
+
+.banner~.last {
+  display: block;
+  width: auto;
+  margin-top: 4em;
+  padding-left: 0;
+}
+    .last h2 {
+      text-align: center;
+      border-top: 1px solid #477444;
+    }
+        .last h2 span {
+          position: relative;
+          top: -.6em;
+          padding: 3px .5em;
+          background: #f3f1e5 url(/images/bg_yeller.jpg);
+        }
+
+/* "We are..." */
 .intro {
-  font-size: 1.8em;
+  font-size: 1.4em;
 }
-      
+ 
 h1, h2, h3, h4, .intro {
-  font-family: nunitobold,verdana,'dejavu sans',sans-serif;
-  line-height: 1.1;
+  font-family: georgia,serif;
 }
-    h1 {
-      margin: 1em 0;
-    }
-    h2 {
-      margin: 2em 0 .5em;
-      font-size: 1.4em;
-    }
-    h3 {
-      margin: 1em 0 .5em;
-      font-size: 1.3em;
-    }
+@media screen and (min-width: 500px) {
+  h1, h2, h3, h4, .intro {
+    font-family: crimson_textsemibold,georgia,serif;
+    line-height: 1.1;
+  }
+}
+
+h1 {
+  margin: 1em 0;
+  font-size: 2em;
+}
+h2 {
+  margin: 2em 0 .5em;
+  font-size: 1.4em;
+}
+h3 {
+  margin: 1em 0 .5em;
+  font-size: 1.2em;
+}
 
 p {
   margin: 0 0 1.5em;
@@ -260,40 +409,57 @@ ul, ol {
   margin: 0 0 1.5em 22px;
   padding: 0;
 }
-
-li {
-  margin-bottom: .4em;
+ul {
+  list-style-type: circle;
 }
+    li {
+      margin-bottom: .4em;
+    }
 
 
 /* members */
 .members {
   margin-top: 2em;
 }
-
-.members div {
-  margin-bottom: 2em;
-  overflow: hidden;
-} 
+    .members div {
+      margin-bottom: 2em;
+      overflow: hidden;
+    } 
     .members h2 {
-      margin: 0 0 .2em 180px;
+      margin-top: 0;
+      padding: .5em 0;
+      border-top: 1px solid #e3daab;
+      border-bottom: 1px solid #e3daab;
     }
         .members h2 a {
           padding: 0 5px;
         }
-        .members h2+a {
-          float: left;
-          margin-top: -1.4em;
-          padding: 1em;
-          background-color: rgba(255,255,255,0.2);
-          border: 1px solid #ddd;
-        }
+    .members h2+a {
+      float: left;
+      margin: 0 1em .6em 0;
+      padding: 1em;
+      background-color: rgba(255,255,255,0.2);
+      border: 1px solid #ddd;
+    }
         .members img {
           border: 1px solid #e3daab;
         }
-    .members p {
-      margin-left: 180px;
-    }
+
+@media screen and (min-width: 600px) {
+  .members div {
+      border-top: 1px solid #e3daab;
+  }
+  .members h2 {
+    margin: 0 0 .2em 180px;
+    border-top: 0;
+  }
+      .members h2+a {
+        margin: -1.8em 0 0 0;
+      }
+      .members p {
+        margin-left: 180px;
+      }
+}
 
 /* individual member */
 .member {
@@ -328,13 +494,11 @@ li {
         }
 
 /* bloggitty blog blog blog */
-article header, article footer {
-  display: inline-block;
-  vertical-align: top;
-  margin: 0 1.5em 1em 0;
+article footer {
+  margin-bottom: 2em;
 }
     article h1 {
-      margin: 0;
+      margin-bottom: 0;
     }
     article footer span,
     article footer time {
@@ -346,58 +510,67 @@ article header, article footer {
     }
 
 
-/* chimp */
+/* chimp, forms */
 fieldset {
   display: inline-block;
   padding: 1em;
   border: 1px solid #e3daab;
 }
-        label, input[type=text],
-        input[type=email], textarea {
-          min-width: 8em;
-          margin: 0 .6em 5px 0;
-          padding: 10px;
-          font: bold 1em/1.1 latoregular,'dejavu sans',helvetica,sans-serif;
+    label, input[type=text],
+    input[type=email], textarea {
+      min-width: 8em;
+      margin: 0 .6em 5px 0;
+      padding: 10px;
+      font: bold 1em/1.1 'dejavu sans',helvetica,sans-serif;
+    }
+    label {
+      display: block;
+    }
+    input[type=text], input[type=email], textarea {
+      width: 15em;
+      margin: 0 0 1em 0;
+      background-color: #fdfcf3;
+      border: 1px solid #e3daab;
+      border-radius: 3px;
+    }
+        input[type=text]:focus, input[type=email]:focus {
+          background-color: #fff;
+          border-color: #a98e55;
+          outline: 0;
         }
-        label {
-          display: block;
+
+    textarea {
+      width: auto;
+    }
+    input[type=submit] {
+      box-sizing: content-box;
+      width: 15em;
+      margin: 10px 1.2em 10px 0;
+      padding: 10px;
+      color: #fff;
+      font-weight: bold;
+      background-color: #477444;
+      border: 1px solid transparent;
+      border-radius: .6em;
+      cursor: pointer;
+      -moz-transition: background-color 0.5s ease-out;
+      -webkit-transition: background-color 0.5s ease-out;
+      -o-transition: background-color 0.5s ease-out;
+      transition: background-color 0.5s ease-out; 
+    }
+        input[type=submit]:focus,
+        input[type=submit]:hover {
+          background-color: #41c337;
+          border: 1px solid #477444;
         }
-        input[type=text], input[type=email], textarea {
-          width: 15em;
-          margin: 0 0 1em 0;
-          background-color: #fdfcf3;
-          border: 1px solid #e3daab;
-          border-radius: 3px;
-        }
-        textarea {
-          width: auto;
-        }
-                input[type=text]:focus, input[type=email]:focus {
-                  background-color: #fff;
-                  border-color: #a98e55;
-                  outline: 0;
-                }
-        input[type=submit] {
-          box-sizing: content-box;
-          width: 15em;
-          margin: 10px 0;
-          padding: 10px;
-          color: #fff;
-          font-weight: bold;
-          background-color: #477444;
-          border: 1px solid transparent;
-          border-radius: .6em;
-          cursor: pointer;
-          -moz-transition: background-color 0.5s ease-out;
-          -webkit-transition: background-color 0.5s ease-out;
-          -o-transition: background-color 0.5s ease-out;
-          transition: background-color 0.5s ease-out; 
-        }
-                input[type=submit]:focus,
-                input[type=submit]:hover {
-                  background-color: #41c337;
-                  border: 1px solid #477444;
-                }
+
+@media screen and (min-width: 500px) {
+  label, input[type=text],
+  input[type=email], textarea {
+    font: bold 1em/1.1 latoregular,'dejavu sans',helvetica,sans-serif;
+  }
+}
+
 @media screen and (min-width: 650px) {
   fieldset div:after {
     content: '';
@@ -405,7 +578,6 @@ fieldset {
     clear: both;
     height: 0;
   }
-
   label, input[type=text],
   input[type=email] {
     float: left;
@@ -424,32 +596,31 @@ fieldset {
   font-size: 1.8em;
   line-height: .6em; 
 }
-  
 
 .footer {
   clear: both;
   position: relative;  
-  max-width: 80%;
   height: 5em;
   margin: -4.5em auto 0;
-  padding: 0 2em;
+  padding: 0 1em;
 }
     .footer div {
       background-color: #e3daab;
       border-radius: 3px;
     }
-        .footer p {
-            display: inline-block;
-            vertical-align: top;
-            margin: 0;
-            padding: 10px;
-            color: #000;
-            font-size: .9em;
-        }
-        .footer a {
-          color: #016;
-          text-decoration: underline;
-        }
+    .footer p {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0;
+        padding: 10px;
+        color: #000;
+        font-size: .9em;
+    }
+    .footer a {
+      color: #016;
+      text-decoration: underline;
+    }
+
 @media screen and (min-width: 600px) {
   .footer p {
       width: 50%;

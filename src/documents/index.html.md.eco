@@ -6,43 +6,52 @@ skipTitleHeading: true
 ---
 
 <div class="banner">
- <p>Your accessibility requirements solved by technical experts who use assistive technology themselves</p>
+ <p>Your accessibility requirements, solved by technical experts who use assistive technology themselves.</p>
 </div>
 
-<span class="intro">We are</span> a new company of access technology experts. Our goals are universal accessibility through universal design, cooperative governance, and full inclusion of people with print disabilities in every step toward full accessibility.
+<div>
+<p><span class="intro">We are</span> a new company of access technology experts. Our goals are universal accessibility through universal design, cooperative governance, and full inclusion of people with print disabilities in every step toward full accessibility.</p>
 
-People ask us, "Where can we find blind software engineers?". Now, with 3MT, we answer, "We're here! We engineer!"
+<p>People ask us, "Where can we find blind software engineers?". Now, with 3MT, we answer, "We're here! We engineer!"</p>
 
-##Services
+<h2>Services</h2>
 
-We're accessibility experts. We sell contract services to help others design and develop accessible software and hardware. We have skills in all aspects of accessibility, from web standards compliance to application and even access technology development.
+<p>We're accessibility experts. We sell contract services to help others design and develop accessible software and hardware. We have skills in all aspects of accessibility, from web standards compliance to application and even access technology development.</p>
+</div>
 
-##Products we've delivered
+<div>
+<h2>Products we've delivered</h2>
+<p>We've contributed to the development of many software and hardware products. All of these are fully accessible or are access technologies themselves.</p>
 
-We've contributed to the development of many software and hardware products. All of these are fully accessible or are access technologies themselves.
+<ul>
+  <li>JAWS, the most popular screen reader</li>
+  <li>System Access, a screen reader popular among novice computer users</li>
+  <li>Spiel, an alternative screen reader for Android</li>
+  <li>QRead, an accessible book reader for Windows</li>
+  <li>Chicken Nugget, a powerful Twitter client for Windows</li>
+  <li>PAC Mate, the PocketPC-based notetaker from Freedom Scientific</li>
+  <li>iBlink Radio for iOS and Android</li>
+  <li>SAMNet, an online service popular among people with vision impairment</li>
+  <li>and many more</li>
+</ul>
+</div>
 
-* JAWS, the most popular screen reader
-* System Access, a screen reader popular among novice computer users
-* Spiel, an alternative screen reader for Android
-* QRead, an accessible book reader for Windows
-* Chicken Nugget, a powerful Twitter client for Windows
-* PAC Mate, the PocketPC-based notetaker from Freedom Scientific
-* iBlink Radio for iOS and Android
-* SAMNet, an online service popular among people with vision impairment
-* and many more
+<div>
+<h2>Platforms we know</h2>
+<p>We've delivered products on the following platforms:</p>
+<ul>
+  <li>All versions of Windows since 3.1</li>
+  <li>Android</li>
+  <li>iOS</li>
+  <li>Mac OS X</li>
+  <li>GNU/Linux</li>
+</ul>
+</div>
 
-##Platforms we know
-
-We've delivered products on the following platforms:
-
-* All versions of Windows since 3.1
-* Android
-* iOS
-* Mac OS X
-* GNU/Linux
-
-##Contact us
-
-If you're looking for accessibility experts, please contact [sales@3MouseTech.com](mailto:sales@3MouseTech.com).
+<div class="last">
+<h2><span>Contact us</span></h2>
+<p>If you're looking for accessibility experts, please contact [sales@3MouseTech.com](mailto:sales@3MouseTech.com).</p>
 
 <%- @partial("mailchimp") %>
+
+</div>

@@ -37,8 +37,9 @@
       <% else: %>
         <p class="logo">
       <% end %>
-          <img src="/images/logo.jpg" alt="Our drawn logo of three mouse heads wearing dark glasses">
-          <a href="/"><%= @site.title %></a>
+          <img src="/images/logo.png" alt="Our drawn logo of three mouse heads wearing dark glasses">
+          <a href="/"><span>3</span> <span>M</span>ouse <span>T</span>echnology</a>
+          <!--a href="/"><%= @site.title %></a-->
       <% if @document.skipTitleHeading: %>
         </h1>
       <% else: %>
