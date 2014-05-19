@@ -1,14 +1,18 @@
 article
-  header
-    h1
-      if standalone
-        =article.title
-      else
+  if !standalone
+    header
+      h2
         a(href = article.url)=article.title
-  footer
+    footer
+      | <span>posted</span> 
+      time(datetime = article.date, am-time-ago = article.date.valueOf())
+        i=article.date.toLocaleDateString()
+  else
+    p
     | <span>posted</span> 
     time(datetime = article.date, am-time-ago = article.date.valueOf())
       i=article.date.toLocaleDateString()
+
     &nbsp;
     if article.tags
       | Tags: 

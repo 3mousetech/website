@@ -494,11 +494,19 @@ ul {
         }
 
 /* bloggitty blog blog blog */
-article footer {
-  margin-bottom: 2em;
+h1+article {
+  margin-top: -1.8em;
 }
-    article h1 {
-      margin-bottom: 0;
+    h1+article h2 {
+      margin-top: 2em;
+    }
+
+article footer {
+  margin: 0 0 1.6em .3em;
+}
+    article h2 {
+      margin: 0;
+      font-size: 1.8em;
     }
     article footer span,
     article footer time {

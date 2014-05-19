@@ -2,7 +2,6 @@
 title: Open For Business
 date: 2014/05/15
 published: true
-skipTitleHeading: true
 ---
 
 FOR IMMEDIATE RELEASE  
