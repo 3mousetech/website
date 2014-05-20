@@ -52,7 +52,7 @@ html, body, form, fieldset, legend, th, td, dt, dd {
   padding: 0;
 }
 
-/*for those born after... */
+/* older browsers */
 header, nav, main, article, footer {
   display: block;
 }
@@ -133,12 +133,12 @@ body {
   word-spacing: 3px;/*Lato is kinda close..*/
 }
 @media screen and (min-width: 950px) {
-  .container, .footer {
+  .container, footer {
     max-width: 85%;
   }
 }
 @media screen and (min-width: 1050px) {
-  .container, .footer {
+  .container, footer {
     max-width: 70%;
   }
 }
@@ -240,12 +240,15 @@ nav ul {
 }
 
 /* is sometimes an h1, other times a p */
+nav+header {
+  margin-top: 1em;
+}
+
 .logo {
   font-size: 1.2em;
   text-align: center;
 }
     .logo a {
-      display: block;
       text-decoration: none;
     }
         .logo a:focus,
@@ -255,49 +258,23 @@ nav ul {
         }
 
 @media screen and (min-width: 500px) {
-  .logo a, .logo span {
-    display: inline;
+  .logo, h1.logo {
+    display: inline-block;
     vertical-align: top;
     font: 1em/100px nunitobold,verdana,sans-serif;
   }
 }
     
 @media screen and (min-width: 750px) {
-  .logo {
+  .logo, h1.logo {
     margin: 1em 0 0;
     font: 2em/1 nunitobold,verdana,sans-serif;
     text-align: left;
     vertical-align: middle;
   } 
-  h1.logo {
-    line-height: 124px;
-  }
-      .logo img {
+      header img {
         vertical-align: top;
       }
-      h1.logo span {
-        display: inline-block;
-        vertical-align: top;
-        margin-left: -1.5em;
-        padding: .9em 1.4em;
-        color: #fff;
-        font: bold 1em saxmonoregular,'courier new',monospace;
-        text-align: center;
-        background-color: rgba(71,116,68,.4);
-        -moz-transition: background-color 0.5s ease-out;
-        -webkit-transition: background-color 0.5s ease-out;
-        -o-transition: background-color 0.5s ease-out;
-        transition: background-color 0.5s ease-out; 
-        border-radius: 50%;
-      }
-          h1.logo span+span {
-            margin-right: -1em;
-          }
-
-          h1.logo a:focus span,
-          h1.logo a:hover span {
-            background-color: rgba(0,17,102,.4);
-          }
 }
 
 a {
@@ -494,11 +471,15 @@ ul {
         }
 
 /* bloggitty blog blog blog */
+article {
+  margin-top: 1em;
+  padding-top: 1em;
+  border-top: 1px solid #e3daab;
+}
+
 h1+article {
-  margin-top: -1.8em;
 }
     h1+article h2 {
-      margin-top: 2em;
     }
 
 article footer {
@@ -605,18 +586,18 @@ fieldset {
   line-height: .6em; 
 }
 
-.footer {
+body>footer {
   clear: both;
   position: relative;  
   height: 5em;
   margin: -4.5em auto 0;
   padding: 0 1em;
 }
-    .footer div {
+    footer div {
       background-color: #e3daab;
       border-radius: 3px;
     }
-    .footer p {
+    body>footer p {
         display: inline-block;
         vertical-align: top;
         margin: 0;
@@ -624,16 +605,16 @@ fieldset {
         color: #000;
         font-size: .9em;
     }
-    .footer a {
+    body>footer a {
       color: #016;
       text-decoration: underline;
     }
 
 @media screen and (min-width: 600px) {
-  .footer p {
+  body>footer p {
       width: 50%;
   }
-  .footer div p:first-child {
+  footer div p:first-child {
       width: 40%;
       text-align: right;
   }

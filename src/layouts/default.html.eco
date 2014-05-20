@@ -23,7 +23,7 @@
     <div id="wrap">
       <div class="container">
         <a class="skiplink" href="#content">Skip to main content</a>
-        <nav>
+        <nav role="navigation">
           <ul>
             <% for document in @getCollection('pages').toJSON(): %>
             <li class="<%= 'active' if @document.url is document.url %>">
@@ -32,14 +32,14 @@
             <% end %>
           </ul>
         </nav>
-      <% if @document.skipTitleHeading: %>
-        <h1 class="logo">
-      <% else: %>
-        <p class="logo">
-      <% end %>
+        <header role="banner">
           <img src="/images/logo.png" alt="Our drawn logo of three mouse heads wearing dark glasses">
-          <a href="/"><span>3</span> <span>M</span>ouse <span>T</span>echnology</a>
-          <!--a href="/"><%= @site.title %></a-->
+        <% if @document.skipTitleHeading: %>
+          <h1 class="logo">
+        <% else: %>
+          <p class="logo">
+        <% end %>
+          <a href="/"><%= @site.title %></a>
       <% if @document.skipTitleHeading: %>
         </h1>
       <% else: %>
@@ -55,7 +55,7 @@
         </main>
       </div>
     </div>
-    <footer role="contentinfo" class="footer">
+    <footer role="contentinfo">
       <div>
         <p>All contents copyright &#169;2014 3 Mouse Technology, LLC.</p>
         <p>For information on licenses, please visit our <a href="/legal">Licenses and Legal page</a>.</p>
