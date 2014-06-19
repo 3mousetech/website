@@ -51,6 +51,14 @@ html, body, form, fieldset, legend, th, td, dt, dd {
   margin: 0;
   padding: 0;
 }
+html.wait {
+  cursor: wait;
+  opacity: 0;
+  -moz-transition: opacity 0.5s ease;
+  -webkit-transition: opacity 0.5s ease;
+  -o-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
 
 /* older browsers */
 header, nav, main, article, footer {
@@ -507,7 +515,7 @@ fieldset {
 }
     label, input[type=text],
     input[type=email], textarea {
-      min-width: 8em;
+      min-width: 10em;
       margin: 0 .6em 5px 0;
       padding: 10px;
       font: bold 1em/1.1 'dejavu sans',helvetica,sans-serif;
@@ -609,6 +617,11 @@ body>footer {
       color: #016;
       text-decoration: underline;
     }
+            body>footer a:focus,
+            body>footer a:hover {
+                color: #477444;
+                text-decoration: none;
+            }
 
 @media screen and (min-width: 600px) {
   body>footer p {

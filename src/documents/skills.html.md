@@ -20,9 +20,8 @@ Prior to forming 3 Mouse Technology, members of 3MT had designed, developed and/
 
 * [JAWS][7]
 * [SystemAccess][16]
-* [Spiel][17]
-* [QRead][18]
-* [ChickenNugget][19]
+* [QRead][17]
+* [ChickenNugget][18]
 * And much, much more...
 
 ## Programming Languages
@@ -57,6 +56,5 @@ Prior to forming 3 Mouse Technology, members of 3MT had designed, developed and/
  [14]: http://en.wikipedia.org/wiki/Java_(programming_language)
  [15]: http://en.wikipedia.org/wiki/Linux
  [16]: http://www.serotek.com/systemaccess
- [17]: https://play.google.com/store/apps/details?id=info.spielproject.spiel
- [18]: http://q-continuum.net/qread/
- [19]: http://q-continuum.net/chicken_nugget/
+ [17]: http://q-continuum.net/qread/
+ [18]: http://q-continuum.net/chicken_nugget/
