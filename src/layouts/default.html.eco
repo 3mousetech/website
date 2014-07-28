@@ -39,12 +39,13 @@
         <% else: %>
           <p class="logo">
         <% end %>
-          <a href="/"><%= @site.title %></a>
+            <a href="/"><%= @site.title %></a>
       <% if @document.skipTitleHeading: %>
-        </h1>
+          </h1>
       <% else: %>
-        </p>
+          </p>
       <% end %>
+        </header>
         <main role="main" id="content">
           <% if !@document.skipTitleHeading && !@document.isPaged: %>
           <h1><%= @document.title %></h1>

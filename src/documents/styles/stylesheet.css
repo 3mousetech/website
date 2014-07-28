@@ -118,7 +118,7 @@ body {
 }
 @media screen and (min-width: 500px) {
   body {
-    font: 100%/130% latoregular,'dejavu sans',helvetica,sans-serif;
+    font-family: latoregular,'dejavu sans',helvetica,sans-serif;
   }
 }
     /*opera resizing min-height*/
@@ -205,7 +205,7 @@ nav ul {
 
 @media screen and (min-width: 500px) {
   nav ul {
-    text-align: center;
+    text-align: left;
     border-top: 0;
   }
       nav a {
@@ -266,15 +266,17 @@ nav+header {
         }
 
 @media screen and (min-width: 500px) {
-  .logo, h1.logo {
+  header p.logo, header h1.logo {
     display: inline-block;
     vertical-align: top;
+    margin: 0;
+    padding: 0;
     font: 1em/100px nunitobold,verdana,sans-serif;
   }
 }
     
 @media screen and (min-width: 750px) {
-  .logo, h1.logo {
+  header p.logo, header h1.logo {
     margin: 1em 0 0;
     font: 2em/1 nunitobold,verdana,sans-serif;
     text-align: left;
@@ -301,7 +303,6 @@ a {
 #content {
   clear: both;
   margin-top: 1.5em;
-  border-top: 1px solid #e3daab;
 }
 
 .banner {
@@ -309,28 +310,23 @@ a {
   margin-bottom: 2em;
   color: #000;
   font: italic 1.4em georgia,serif;
+  border-top: 1px solid #e3daab;
   border-bottom: 1px solid #e3daab;
 }
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 800px) {
   .banner {
     font: normal 2em crimson_textsemibold_italic,georgia,serif;
   }
-}
 
-.banner p {
-  max-width: 690px;
-  margin: 0 auto;
-}
-
-@media screen and (min-width: 850px) {
-  .banner {
-    font-size: 3em;
+  .banner p {
+    max-width: 690px;
+    margin: 0 auto;
   }
 
   .banner~div {
     display: inline-block;
     vertical-align: top;
-    width: 28%;
+    width: 24%;
     padding-left: 3em;
   }
       .banner+div {
@@ -339,6 +335,11 @@ a {
       .banner~div h2 {
         margin-top: 0;
       }
+}
+@media screen and (min-width: 1100px) {
+  .banner~div {
+    width: 26%;
+  }
 }
 
 .banner~.last {
@@ -376,6 +377,12 @@ h1, h2, h3, h4, .intro {
 h1 {
   margin: 1em 0;
   font-size: 2em;
+}
+#content h1 {
+  margin: 0 0 1em;
+  padding: .8em 0;
+  border-top: 1px solid #e3daab;
+  border-bottom: 1px solid #e3daab;
 }
 h2 {
   margin: 2em 0 .5em;
@@ -420,7 +427,7 @@ ul {
           padding: 0 5px;
         }
     .members h2+a {
-      float: left;
+      display: inline-block;
       margin: 0 1em .6em 0;
       padding: 1em;
       background-color: rgba(255,255,255,0.2);
@@ -439,6 +446,7 @@ ul {
     border-top: 0;
   }
       .members h2+a {
+        float: left;
         margin: -1.8em 0 0 0;
       }
       .members p {
@@ -457,7 +465,7 @@ ul {
       background-color: rgba(255,255,255,0.2);
       border: 1px solid #e3daab;
     }
-    .member p {
+    .member img~p {
       margin-left: 180px;
     }
     .twit a {
@@ -480,9 +488,7 @@ ul {
 
 /* bloggitty blog blog blog */
 article {
-  margin-top: 1em;
-  padding-top: 1em;
-  border-top: 1px solid #e3daab;
+  max-width: 700px;
 }
 
 h1+article {
