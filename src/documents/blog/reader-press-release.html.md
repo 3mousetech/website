@@ -13,7 +13,9 @@ Vancouver, British Columbia, September 12, 2014, [3 Mouse Technology][2]
 
 "I scoured a number of Android app stores and couldn't find a book reader for Android that met all of my needs," says Tyler Spivey, lead developer of the 3MT Reader software, "so, I sat down and made one for myself and I am looking forward to seeing other blind people enjoy it as well."
 
-##Heavy reading beta testers are positive 
+##Feedback
+Heavy reading beta testers are positive.
+ 
 "This will definitely be my primary eBook reading method on my Android units—thanks to you guys from 3 Mouse Technology," says beta tester Jacob Kruger.
 
 One beta tester, Andy Duderino, says "The app is the fastest and most intuitive reader I have encountered on Android. I love the ability to change the TTS settings from within the app. This, as well as the spelling functions, makes it a powerful tool when reading academic material!"
