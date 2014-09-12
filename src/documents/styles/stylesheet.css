@@ -494,6 +494,8 @@ article {
 h1+article {
 }
     h1+article h2 {
+      margin: 2em 0 .5em;
+      font-size: 1.4em;
     }
 
 article footer {
